@@ -92,6 +92,7 @@ import kotlinx.serialization.descriptors.*
 import kotlinx.serialization.encoding.*
 import kotlinx.serialization.json.*
 import kotlin.DeprecationLevel.ERROR
+import kotlin.jvm.JvmName
 
 @Serializable
 public data class DiscordApplicationCommand(

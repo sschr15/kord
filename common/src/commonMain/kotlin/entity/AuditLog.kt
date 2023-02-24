@@ -39,7 +39,11 @@
         Entry("IntegrationDelete", intValue = 82, kDoc = "App was removed from server."),
         Entry("StageInstanceCreate", intValue = 83, kDoc = "Stage instance was created (stage channel becomes live)."),
         Entry("StageInstanceUpdate", intValue = 84, kDoc = "Stage instance details were updated."),
-        Entry("StageInstanceDelete", intValue = 85, kDoc = "Stage instance was deleted (stage channel no longer live)."),
+        Entry(
+            "StageInstanceDelete",
+            intValue = 85,
+            kDoc = "Stage instance was deleted (stage channel no longer live)."
+        ),
         Entry("StickerCreate", intValue = 90, kDoc = "Sticker was created."),
         Entry("StickerUpdate", intValue = 91, kDoc = "Sticker details were updated."),
         Entry("StickerDelete", intValue = 92, kDoc = "Sticker was deleted."),
@@ -55,7 +59,11 @@
         Entry("AutoModerationRuleDelete", intValue = 142, kDoc = "Auto Moderation rule was deleted."),
         Entry("AutoModerationBlockMessage", intValue = 143, kDoc = "Message was blocked by Auto Moderation."),
         Entry("AutoModerationFlagToChannel", intValue = 144, kDoc = "Message was flagged by Auto Moderation."),
-        Entry("AutoModerationUserCommunicationDisabled", intValue = 145, kDoc = "Member was timed out by Auto Moderation."),
+        Entry(
+            "AutoModerationUserCommunicationDisabled",
+            intValue = 145,
+            kDoc = "Member was timed out by Auto Moderation."
+        ),
     ],
 )
 
@@ -202,6 +210,7 @@ public data class AuditLogChange<T>(
                         index,
                         AuditLogChangeKey.Serializer(Unit.serializer())
                     )
+
                     CompositeDecoder.DECODE_DONE -> break
                     else -> throw SerializationException("unknown index: $index")
                 }
