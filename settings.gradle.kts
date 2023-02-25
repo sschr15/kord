@@ -17,6 +17,7 @@ include(
     "samples",
     "test-kit",
     "voice",
+    "js-test"
 )
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
