@@ -47,7 +47,18 @@ class StackTraceRecoveryTest {
 
             val recovered = e.suppressedExceptions.first { it is RecoveredStackTrace } as RecoveredStackTrace
             recovered.printStackTrace()
+<<<<<<<< HEAD:rest/src/commonTest/kotlin/request/StackTraceRecoveryTest.kt
             recovered.validate(stackTrace)
+========
+
+            // at request.StackTraceRecoveryTest$test stack trace recovery$1.invokeSuspend(StackTraceRecoveryTest.kt:39)
+            with(recovered.stackTrace.first()) {
+                assertEquals(stackTrace.className, className)
+                assertEquals(stackTrace.fileName, fileName)
+                assertEquals(stackTrace.lineNumber + 2, lineNumber) // +2 because capture is two lines deeper
+                assertEquals(stackTrace.methodName, methodName)
+            }
+>>>>>>>> d1ec4f04dfa (Migrate rest module to MPP):rest/src/jvmTest/kotlin/dev/kord/rest/request/StackTraceRecoveryTest.kt
         }
     }
 }

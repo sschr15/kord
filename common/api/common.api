@@ -15,7 +15,7 @@ public final class dev/kord/common/Color$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class dev/kord/common/ColorKt {
+public final class dev/kord/common/ColorJvm {
 	public static final fun getKColor (Ljava/awt/Color;)Ldev/kord/common/Color;
 }
 
