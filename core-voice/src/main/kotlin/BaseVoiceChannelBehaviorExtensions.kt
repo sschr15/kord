@@ -1,4 +1,4 @@
-@file:JvmName("VoiceBaseVoiceChannelBehavior")
+@file:JvmName("BaseVoiceChannelBehaviorJvm")
 
 package dev.kord.core.behavior.channel
 
