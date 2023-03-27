@@ -16,6 +16,13 @@ kotlin {
             }
         }
     }
+    targets {
+        all {
+            compilations.all {
+                compilerOptions.options.applyKordCompilerOptions()
+            }
+        }
+    }
 }
 
 tasks {
