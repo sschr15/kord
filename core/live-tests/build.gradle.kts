@@ -15,7 +15,7 @@ kotlin {
         }
     }
     sourceSets {
-        applyKordSourceSetOptions()
+        applyKordOptIns()
     }
 }
 
