@@ -11,6 +11,7 @@ kotlin {
 
                 api(libs.bundles.ktor.client.serialization)
                 api(libs.ktor.client.websockets)
+                api(libs.ktor.client.core)
             }
         }
         jsMain {
