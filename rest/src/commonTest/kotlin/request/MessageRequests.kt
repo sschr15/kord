@@ -1,6 +1,5 @@
 package dev.kord.rest.request
 
-import dev.kord.common.Platform
 import dev.kord.common.entity.DiscordAttachment
 import dev.kord.common.entity.DiscordMessage
 import dev.kord.common.entity.DiscordUser
