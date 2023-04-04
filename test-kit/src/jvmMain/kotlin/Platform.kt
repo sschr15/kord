@@ -2,6 +2,11 @@ package dev.kord.test
 
 import io.ktor.utils.io.*
 import io.ktor.utils.io.jvm.javaio.*
+actual object Platform {
+    actual const val IS_JVM: Boolean = true
+    actual const val IS_NODE: Boolean = false
+    actual const val IS_BROWSER: Boolean = false
+}
 
 actual object Platform {
     actual const val IS_JVM: Boolean = true
