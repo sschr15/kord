@@ -123,7 +123,6 @@ public class DefaultGateway(private val data: DefaultGatewayData) : Gateway {
                 if (exception.isTimeout()) {
                     data.eventFlow.emit(Close.Timeout)
                 }
-                exception.printStackTrace()
                 data.reconnectRetry.retry()
                 continue //can't handle a close code if you've got no socket
             }
@@ -209,7 +208,6 @@ public class DefaultGateway(private val data: DefaultGatewayData) : Gateway {
                 state.update { State.Stopped }
                 throw IllegalStateException("Gateway closed: ${reason.code} ${reason.message}")
             }
-
             discordReason.resetSession -> {
                 setStopped()
             }
