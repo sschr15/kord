@@ -5,3 +5,7 @@ plugins {
     org.jetbrains.dokka
     `kord-publishing`
 }
+
+kotlin {
+    mingwX64("native")
+}

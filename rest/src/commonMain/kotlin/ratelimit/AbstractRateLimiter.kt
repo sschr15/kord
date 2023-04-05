@@ -5,6 +5,7 @@ import dev.kord.common.ratelimit.IntervalRateLimiter
 import dev.kord.rest.request.Request
 import dev.kord.rest.request.RequestIdentifier
 import dev.kord.rest.request.identifier
+import io.ktor.util.*
 import kotlinx.atomicfu.atomic
 import kotlinx.atomicfu.update
 import kotlinx.coroutines.CompletableDeferred
@@ -36,7 +37,6 @@ public abstract class AbstractRateLimiter internal constructor(public val clock:
         globalSuspensionPoint.value.await()
         val buckets = request.buckets
         buckets.forEach { it.awaitAndLock() }
-
         autoBanRateLimiter.consume()
         return newToken(request, buckets)
     }
@@ -69,10 +69,12 @@ public abstract class AbstractRateLimiter internal constructor(public val clock:
                         logger.trace { "[RATE LIMIT]:[GLOBAL]:exhausted until ${response.reset.value}" }
                         globalSuspensionPoint.update { response.reset }
                     }
+
                     is RequestResponse.BucketRateLimit -> {
                         logger.trace { "[RATE LIMIT]:[BUCKET]:Bucket ${response.bucketKey.value} was exhausted until ${response.reset.value}" }
                         response.bucketKey.bucket.updateReset(response.reset)
                     }
+
                     is RequestResponse.Accepted, RequestResponse.Error -> {}
                 }
 
@@ -93,7 +95,12 @@ public abstract class AbstractRateLimiter internal constructor(public val clock:
         }
 
         fun updateReset(newValue: Reset) {
-            reset.update { newValue }
+            // TODO: Wait for https://github.com/Kotlin/kotlinx-atomicfu/issues/291
+            if (PlatformUtils.IS_NATIVE) {
+                reset.value = newValue
+            } else {
+                reset.update { newValue }
+            }
         }
 
         fun unlock() = mutex.unlock()

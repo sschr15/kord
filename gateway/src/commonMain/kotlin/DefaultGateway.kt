@@ -119,11 +119,11 @@ public class DefaultGateway(private val data: DefaultGatewayData) : Gateway {
                  */
                 inflater = Inflater()
             } catch (exception: Exception) {
-                defaultGatewayLogger.error(exception)
+                defaultGatewayLogger.error(exception) { "An error occurred whilst connecting to the gateway" }
                 if (exception.isTimeout()) {
                     data.eventFlow.emit(Close.Timeout)
                 }
-
+                exception.printStackTrace()
                 data.reconnectRetry.retry()
                 continue //can't handle a close code if you've got no socket
             }
@@ -209,6 +209,7 @@ public class DefaultGateway(private val data: DefaultGatewayData) : Gateway {
                 state.update { State.Stopped }
                 throw IllegalStateException("Gateway closed: ${reason.code} ${reason.message}")
             }
+
             discordReason.resetSession -> {
                 setStopped()
             }

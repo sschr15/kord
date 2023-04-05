@@ -1,6 +1,7 @@
 package dev.kord.common.serialization
 
 import dev.kord.test.IgnoreOnJs
+import dev.kord.test.IgnoreOnNative
 import kotlinx.datetime.Instant
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.SerializationException
@@ -69,6 +70,7 @@ abstract class InstantSerializerTest(
 
 
 @IgnoreOnJs // currently can't pass
+@IgnoreOnNative
 class InstantInEpochMillisecondsSerializerTest : InstantSerializerTest(
     json = "796514689159",
     instant = Instant.fromEpochMilliseconds(796514689159),

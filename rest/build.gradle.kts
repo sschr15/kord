@@ -4,6 +4,7 @@ plugins {
 }
 
 kotlin {
+    mingwX64("mingw")
     sourceSets {
         commonMain {
             dependencies {

@@ -6,6 +6,8 @@ plugins {
 }
 
 kotlin {
+    mingwX64("mingw")
+
     sourceSets {
         commonMain {
             dependencies {
@@ -38,6 +40,13 @@ kotlin {
                 // workaround for https://youtrack.jetbrains.com/issue/KT-43500
                 // (intended to be compileOnly in commonMain only)
                 implementation(projects.kspAnnotations)
+            }
+        }
+        getByName("mingwMain") {
+            dependencies {
+                // K/N doesn't support compileOnly dependencies
+                implementation(projects.kspAnnotations)
+                implementation(libs.ktor.client.winhttp)
             }
         }
     }

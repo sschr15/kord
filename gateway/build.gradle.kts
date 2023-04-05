@@ -4,6 +4,11 @@ plugins {
 }
 
 kotlin {
+    mingwX64("mingw") {
+        binaries.executable {
+            entryPoint = "dev.kord.gateway.main"
+        }
+    }
     sourceSets {
         commonMain {
             dependencies {
