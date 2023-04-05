@@ -37,7 +37,6 @@ abstract class AbstractRequestRateLimiterTest {
             null
         )
         val token = await(request)
-
         when (rateLimit.isExhausted) {
             true -> token.complete(
                 RequestResponse.BucketRateLimit(
