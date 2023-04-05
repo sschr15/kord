@@ -1,5 +1,6 @@
 import org.jetbrains.dokka.gradle.AbstractDokkaLeafTask
 import org.jetbrains.kotlin.gradle.targets.js.testing.KotlinJsTest
+import org.jetbrains.kotlin.gradle.targets.native.tasks.KotlinNativeTest
 
 plugins {
     org.jetbrains.kotlin.multiplatform
@@ -53,14 +54,17 @@ kotlin {
         val nonJvmMain by creating {
             dependsOn(commonMain.get())
         }
-        targets
-            .map { it.name }
-            .filter { it != "jvm" && it != "metadata" }
-            .forEach { target ->
-                sourceSets.getByName("${target}Main") {
-                    dependsOn(nonJvmMain)
+        afterEvaluate {
+            targets
+                .asSequence()
+                .map { it.name }
+                .filter { it != "jvm" && it != "metadata" }
+                .forEach { target ->
+                    kotlin.sourceSets.getByName("${target}Main") {
+                        dependsOn(nonJvmMain)
+                    }
                 }
-            }
+        }
     }
 }
 
@@ -74,15 +78,33 @@ tasks {
     withType<KotlinJsTest>().configureEach {
         environment("PROJECT_ROOT", rootProject.projectDir.absolutePath)
     }
+    withType<KotlinNativeTest>().configureEach {
+        environment("PROJECT_ROOT", rootProject.projectDir.absolutePath)
+    }
 
-    for (task in listOf("compileKotlinJvm", "compileKotlinJs", "jvmSourcesJar", "jsSourcesJar")) {
-        named(task) {
-            dependsOn("kspCommonMainKotlinMetadata")
-        }
+    // Configuring before/after evaluate, to mute warning and catch after evaluate changes
+    configureNonJvmSourceSet()
+    afterEvaluate {
+        configureNonJvmSourceSet()
     }
 
     withType<AbstractDokkaLeafTask>().configureEach {
         applyKordDokkaOptions()
         dependsOn("kspCommonMainKotlinMetadata")
     }
+}
+
+fun Project.configureNonJvmSourceSet() {
+    project.kotlin.targets
+        .asSequence()
+        .map { it.name }
+        .filterNot { it == "metadata" }
+        .flatMap {
+            val capitalized = it[0].uppercase() + it.drop(1)
+            listOf("compileKotlin$capitalized", "${it}SourcesJar")
+        }.forEach { task ->
+            tasks.findByName(task)?.apply {
+                dependsOn("kspCommonMainKotlinMetadata")
+            }
+        }
 }

@@ -3,6 +3,7 @@ plugins {
 }
 
 kotlin {
+    mingwX64("mingw")
     sourceSets {
         commonMain {
             dependencies {
@@ -18,6 +19,12 @@ kotlin {
         jvmMain {
             dependencies {
                 api(libs.bundles.test.jvm)
+            }
+        }
+
+        getByName("mingwMain") {
+            dependencies {
+                api(libs.okio)
             }
         }
     }

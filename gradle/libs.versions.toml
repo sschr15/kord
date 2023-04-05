@@ -14,6 +14,7 @@ kotlinx-nodejs = "18.14.0-pre.502" # https://github.com/JetBrains/kotlin-wrapper
 bignum = "0.3.8" # https://github.com/ionspin/kotlin-multiplatform-bignum
 stately = "2.0.0-rc1" # https://github.com/touchlab/Stately
 fastZlib = "2.0.1" # https://github.com/timotejroiko/fast-zlib
+okio = "3.3.0" # https://github.com/square/okio
 
 # code generation
 ksp = "1.8.10-1.0.9" # https://github.com/google/ksp
@@ -26,7 +27,7 @@ slf4j = "2.0.7" # https://www.slf4j.org
 
 # plugins
 dokka = "1.8.10" # https://github.com/Kotlin/dokka
-kotlinx-atomicfu = "0.20.0" # https://github.com/Kotlin/kotlinx-atomicfu
+kotlinx-atomicfu = "0.20.1" # https://github.com/Kotlin/kotlinx-atomicfu
 binary-compatibility-validator = "0.13.0" # https://github.com/Kotlin/binary-compatibility-validator
 buildconfig = "3.1.0" # https://github.com/gmazzo/gradle-buildconfig-plugin
 
@@ -43,6 +44,7 @@ ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx
 ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
 ktor-client-js = { module = "io.ktor:ktor-client-js", version.ref = "ktor" }
 ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
+ktor-client-winhttp = { module = "io.ktor:ktor-client-winhttp", version.ref = "ktor" }
 ktor-client-websockets = { module = "io.ktor:ktor-client-websockets", version.ref = "ktor" }
 ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
 ktor-network = { module = "io.ktor:ktor-network", version.ref = "ktor" }
@@ -61,6 +63,7 @@ kotlin-logging = { module = "io.github.microutils:kotlin-logging", version.ref =
 # JDK replacements
 bignum = { module = "com.ionspin.kotlin:bignum", version.ref = "bignum" }
 stately-collections = { module = "co.touchlab:stately-concurrent-collections", version.ref = "stately" }
+okio = { module = "com.squareup.okio:okio", version.ref = "okio" }
 
 # code generation
 ksp-api = { module = "com.google.devtools.ksp:symbol-processing-api", version.ref = "ksp" }
