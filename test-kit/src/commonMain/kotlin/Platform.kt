@@ -6,6 +6,9 @@ expect object Platform {
     val IS_JVM: Boolean
     val IS_NODE: Boolean
     val IS_BROWSER: Boolean
+    val IS_MINGW: Boolean
+    val IS_LINUX: Boolean
+    val IS_DARWIN: Boolean
 }
 
 expect fun getEnv(name: String): String?

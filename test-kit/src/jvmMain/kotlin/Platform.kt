@@ -7,6 +7,9 @@ actual object Platform {
     actual const val IS_JVM: Boolean = true
     actual const val IS_NODE: Boolean = false
     actual const val IS_BROWSER: Boolean = false
+    actual const val IS_MINGW: Boolean = false
+    actual const val IS_LINUX: Boolean = false
+    actual const val IS_DARWIN: Boolean = false
 }
 
 actual fun getEnv(name: String): String? = System.getenv(name)

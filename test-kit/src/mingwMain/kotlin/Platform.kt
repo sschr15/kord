@@ -7,11 +7,16 @@ import okio.Path.Companion.toPath
 import okio.buffer
 import okio.use
 import platform.posix.getenv
+import kotlin.native.Platform
 
 actual object Platform {
+    private val darwinFamily = listOf(OsFamily.IOS, OsFamily.MACOSX, OsFamily.TVOS, OsFamily.WATCHOS)
     actual const val IS_JVM: Boolean = false
     actual const val IS_NODE: Boolean = false
     actual const val IS_BROWSER: Boolean = false
+    actual val IS_MINGW: Boolean = Platform.osFamily == OsFamily.WINDOWS
+    actual val IS_LINUX: Boolean = Platform.osFamily == OsFamily.LINUX
+    actual val IS_DARWIN: Boolean = Platform.osFamily in darwinFamily
 }
 
 actual fun getEnv(name: String): String? = getenv(name)?.toKString()
