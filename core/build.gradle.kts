@@ -13,6 +13,7 @@ kotlin {
             }
         }
     }
+    mingwX64("mingw")
 
     sourceSets {
         commonMain {
