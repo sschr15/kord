@@ -17,5 +17,5 @@ internal actual class Inflater : Closeable {
         return outputStream.use { it.toByteArray().decodeToString() }
     }
 
-    override fun close() = Unit
+    override fun close() = delegate.end()
 }
