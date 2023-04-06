@@ -15,5 +15,5 @@ internal actual class Inflater : Closeable {
         return inflate.process(buffer).toString(BufferEncoding.utf8)
     }
 
-    override fun close() = Unit
+    override fun close() = inflate.close()
 }
