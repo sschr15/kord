@@ -8,6 +8,10 @@ plugins {
     `kord-publishing`
 }
 
+kotlin {
+    mingwX64()
+}
+
 tasks.withType<AbstractDokkaLeafTask>().configureEach {
     enabled = false
 }

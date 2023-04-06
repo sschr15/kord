@@ -14,9 +14,6 @@ kotlin {
             }
         }
     }
-    sourceSets {
-        applyKordOptIns()
-    }
 }
 
 tasks {
