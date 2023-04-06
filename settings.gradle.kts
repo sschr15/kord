@@ -17,6 +17,10 @@ include(
     "samples",
     "test-kit",
     "voice",
+    "core-voice",
+    "test-kit",
+    "samples",
+    "core:live-tests"
 )
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
