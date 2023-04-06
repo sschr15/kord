@@ -1,9 +1,9 @@
 package dev.kord.voice.streams
 
-import com.iwebpp.crypto.TweetNaclFast
 import dev.kord.common.annotation.KordVoice
 import dev.kord.common.entity.Snowflake
 import dev.kord.voice.AudioFrame
+import dev.kord.voice.encryption.SecretBox
 import dev.kord.voice.encryption.XSalsa20Poly1305Codec
 import dev.kord.voice.encryption.strategies.NonceStrategy
 import dev.kord.voice.gateway.Speaking
@@ -88,7 +88,7 @@ public class DefaultStreams(
 
 private fun Flow<RTPPacket>.decrypt(nonceStrategy: NonceStrategy, key: ByteArray): Flow<RTPPacket> {
     val codec = XSalsa20Poly1305Codec(key)
-    val nonceBuffer = ByteArray(TweetNaclFast.SecretBox.nonceLength).mutableCursor()
+    val nonceBuffer = ByteArray(SecretBox.nonceLength).mutableCursor()
 
     val decryptedBuffer = ByteArray(512)
     val decryptedCursor = decryptedBuffer.mutableCursor()

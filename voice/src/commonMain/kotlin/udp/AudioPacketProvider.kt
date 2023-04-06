@@ -1,8 +1,8 @@
 package dev.kord.voice.udp
 
-import com.iwebpp.crypto.TweetNaclFast
 import dev.kord.voice.encryption.XSalsa20Poly1305Codec
 import dev.kord.voice.encryption.strategies.NonceStrategy
+import dev.kord.voice.encryption.SecretBox
 import dev.kord.voice.io.ByteArrayView
 import dev.kord.voice.io.MutableByteArrayCursor
 import dev.kord.voice.io.mutableCursor
@@ -25,7 +25,7 @@ public class DefaultAudioPacketProvider(key: ByteArray, nonceStrategy: NonceStra
 
     private val rtpHeaderView: ByteArrayView = packetBuffer.view(0, RTP_HEADER_LENGTH)!!
 
-    private val nonceBuffer: MutableByteArrayCursor = ByteArray(TweetNaclFast.SecretBox.nonceLength).mutableCursor()
+    private val nonceBuffer: MutableByteArrayCursor = ByteArray(SecretBox.nonceLength).mutableCursor()
 
     private val lock: Any = Any()
 
@@ -44,7 +44,7 @@ public class DefaultAudioPacketProvider(key: ByteArray, nonceStrategy: NonceStra
                 nonceBuffer.reset()
 
                 // make sure we enough room in this buffer
-                resize(RTP_HEADER_LENGTH + (data.size + TweetNaclFast.SecretBox.boxzerobytesLength) + nonceStrategy.nonceLength)
+                resize(RTP_HEADER_LENGTH + (data.size + SecretBox.boxzerobytesLength) + nonceStrategy.nonceLength)
 
                 // write header and generate nonce
                 writeHeader(sequence.toShort(), timestamp.toInt(), ssrc.toInt())
