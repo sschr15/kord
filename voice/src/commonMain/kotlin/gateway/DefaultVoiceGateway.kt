@@ -2,14 +2,13 @@ package dev.kord.voice.gateway
 
 import dev.kord.common.annotation.KordVoice
 import dev.kord.common.entity.Snowflake
+import dev.kord.gateway.isTimeout
 import dev.kord.gateway.retry.Retry
 import dev.kord.voice.gateway.handler.HandshakeHandler
 import dev.kord.voice.gateway.handler.HeartbeatHandler
 import io.ktor.client.*
-import io.ktor.client.plugins.*
 import io.ktor.client.plugins.websocket.*
 import io.ktor.client.request.*
-import io.ktor.util.logging.*
 import io.ktor.websocket.*
 import kotlinx.atomicfu.AtomicRef
 import kotlinx.atomicfu.atomic
@@ -89,8 +88,8 @@ public class DefaultVoiceGateway(
             } catch (exception: Exception) {
                 if (exception is CancellationException) break
 
-                defaultVoiceGatewayLogger.error(exception)
-                if (exception is java.nio.channels.UnresolvedAddressException) {
+                defaultVoiceGatewayLogger.error(exception) { "An error ocurred whilst establishing gateway connection" }
+                if (exception.isTimeout()) {
                     data.eventFlow.emit(Close.Timeout)
                 }
 
@@ -105,7 +104,7 @@ public class DefaultVoiceGateway(
             } catch (exception: CancellationException) {
                 defaultVoiceGatewayLogger.trace(exception) { "voice gateway stopped" }
             } catch (exception: Exception) {
-                defaultVoiceGatewayLogger.error(exception) { "voice gateway stopped"}
+                defaultVoiceGatewayLogger.error(exception) { "voice gateway stopped" }
             }
 
             defaultVoiceGatewayLogger.trace { "voice gateway connection closing" }
@@ -115,7 +114,7 @@ public class DefaultVoiceGateway(
             } catch (exception: CancellationException) {
                 defaultVoiceGatewayLogger.trace(exception) { "" }
             } catch (exception: Exception) {
-                defaultVoiceGatewayLogger.error(exception)
+                defaultVoiceGatewayLogger.error(exception) { "" }
             }
 
             defaultVoiceGatewayLogger.trace { "handled voice gateway connection closed" }
@@ -141,7 +140,7 @@ public class DefaultVoiceGateway(
     }
 
     private suspend fun read(frame: Frame) {
-        val json = String(frame.data, Charsets.UTF_8)
+        val json = frame.data.decodeToString()
 
         try {
             val event = jsonParser.decodeFromString(VoiceEvent.DeserializationStrategy, json)
@@ -155,7 +154,7 @@ public class DefaultVoiceGateway(
 
             data.eventFlow.emit(event)
         } catch (exception: Exception) {
-            defaultVoiceGatewayLogger.error(exception)
+            defaultVoiceGatewayLogger.error(exception) { "An error ocurred whilst decoding voice gateway event" }
         }
     }
 

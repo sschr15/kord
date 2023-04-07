@@ -1,7 +1,6 @@
 package dev.kord.voice.gateway
 
 import dev.kord.common.annotation.KordVoice
-import io.ktor.util.logging.*
 import kotlinx.coroutines.*
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.*
@@ -111,7 +110,11 @@ public inline fun <reified T : VoiceEvent> VoiceGateway.on(
     crossinline consumer: suspend T.() -> Unit
 ): Job {
     return this.events.buffer(Channel.UNLIMITED).filterIsInstance<T>().onEach {
-        scope.launch { it.runCatching { it.consumer() }.onFailure(voiceGatewayOnLogger::error) }
+        scope.launch {
+            it.runCatching { it.consumer() }.onFailure {
+                voiceGatewayOnLogger.error(it) { "An error occurred in an event listener" }
+            }
+        }
     }.launchIn(scope)
 }
 

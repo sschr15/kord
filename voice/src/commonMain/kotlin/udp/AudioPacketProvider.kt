@@ -1,12 +1,14 @@
 package dev.kord.voice.udp
 
+import dev.kord.voice.encryption.SecretBox
 import dev.kord.voice.encryption.XSalsa20Poly1305Codec
 import dev.kord.voice.encryption.strategies.NonceStrategy
-import dev.kord.voice.encryption.SecretBox
 import dev.kord.voice.io.ByteArrayView
 import dev.kord.voice.io.MutableByteArrayCursor
 import dev.kord.voice.io.mutableCursor
 import dev.kord.voice.io.view
+import kotlinx.atomicfu.locks.SynchronizedObject
+import kotlinx.atomicfu.locks.synchronized
 
 public abstract class AudioPacketProvider(public val key: ByteArray, public val nonceStrategy: NonceStrategy) {
     public abstract fun provide(sequence: UShort, timestamp: UInt, ssrc: UInt, data: ByteArray): ByteArrayView
@@ -27,7 +29,7 @@ public class DefaultAudioPacketProvider(key: ByteArray, nonceStrategy: NonceStra
 
     private val nonceBuffer: MutableByteArrayCursor = ByteArray(SecretBox.nonceLength).mutableCursor()
 
-    private val lock: Any = Any()
+    private val lock = SynchronizedObject()
 
     private fun MutableByteArrayCursor.writeHeader(sequence: Short, timestamp: Int, ssrc: Int) {
         writeByte(((2 shl 6) or (0x0) or (0x0)).toByte()) // first 2 bytes are version. the rest

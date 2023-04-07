@@ -135,3 +135,7 @@ private fun Flow<RTPPacket>.clean(): Flow<RTPPacket> {
         packet
     }
 }
+
+private fun <K, V> MutableMap<K, V>.computeIfAbsent(key: K, producer: (K) -> V) = this[key] ?: producer(key).also {
+    this[key] = it
+}

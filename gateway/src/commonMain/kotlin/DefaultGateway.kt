@@ -1,5 +1,6 @@
 package dev.kord.gateway
 
+import dev.kord.common.annotation.KordInternal
 import dev.kord.common.entity.optional.optional
 import dev.kord.common.entity.optional.optionalInt
 import dev.kord.common.ratelimit.RateLimiter
@@ -30,7 +31,8 @@ import kotlin.time.Duration
 
 private val defaultGatewayLogger = KotlinLogging.logger { }
 
-internal expect fun Throwable.isTimeout(): Boolean
+@KordInternal
+public expect fun Throwable.isTimeout(): Boolean
 
 private sealed class State(val retry: Boolean) {
     object Stopped : State(false)
