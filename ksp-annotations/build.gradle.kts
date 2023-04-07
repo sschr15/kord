@@ -1,4 +1,7 @@
 import org.jetbrains.dokka.gradle.AbstractDokkaLeafTask
+import dev.kord.gradle.model.*
+import dev.kord.gradle.model.targets.*
+import dev.kord.gradle.model.targets.native.*
 
 plugins {
     `kord-internal-multiplatform-module`
@@ -9,7 +12,12 @@ plugins {
 }
 
 kotlin {
-    mingwX64()
+    configureTargets {
+        nodejs()
+        linuxX64()
+        mingwX64()
+        darwin()
+    }
 }
 
 tasks.withType<AbstractDokkaLeafTask>().configureEach {

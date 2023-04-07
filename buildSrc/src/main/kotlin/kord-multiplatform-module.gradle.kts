@@ -1,6 +1,8 @@
 import org.jetbrains.dokka.gradle.AbstractDokkaLeafTask
 import org.jetbrains.kotlin.gradle.targets.js.testing.KotlinJsTest
 import org.jetbrains.kotlin.gradle.targets.native.tasks.KotlinNativeTest
+import dev.kord.gradle.model.*
+import dev.kord.gradle.model.targets.*
 
 plugins {
     org.jetbrains.kotlin.multiplatform
@@ -9,6 +11,7 @@ plugins {
     `kotlinx-atomicfu`
     org.jetbrains.kotlinx.`binary-compatibility-validator`
     com.google.devtools.ksp
+    dev.kord.`kotlin-multiplatform-plugin`
 }
 
 repositories {
@@ -25,12 +28,11 @@ apiValidation {
 
 kotlin {
     explicitApi()
-
-    jvm()
-    js(IR) {
-        nodejs()
-    }
     jvmToolchain(Jvm.target)
+
+    configureTargets {
+        jvm()
+    }
 
     targets.all {
         compilations.all {
@@ -51,21 +53,11 @@ kotlin {
                 implementation(project(":test-kit"))
             }
         }
-        val nonJvmMain by creating {
-            dependsOn(commonMain.get())
-        }
-        afterEvaluate {
-            targets
-                .asSequence()
-                .map { it.name }
-                .filter { it != "jvm" && it != "metadata" }
-                .forEach { target ->
-                    kotlin.sourceSets.getByName("${target}Main") {
-                        dependsOn(nonJvmMain)
-                    }
-                }
-        }
     }
+}
+
+kotlinMultiplatformProject {
+    configurePublishing.set(false)
 }
 
 configureAtomicFU()

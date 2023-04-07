@@ -1,3 +1,7 @@
+import dev.kord.gradle.model.*
+import dev.kord.gradle.model.targets.*
+import dev.kord.gradle.model.targets.native.*
+
 @Suppress("DSL_SCOPE_VIOLATION") // false positive for `libs` in IntelliJ
 plugins {
     `kord-multiplatform-module`
@@ -6,8 +10,45 @@ plugins {
 }
 
 kotlin {
-    mingwX64("mingw")
+    configureTargets {
+        group("nonJvm") {
+            dependencies {
+                implementation(libs.ktor.utils)
+                implementation(libs.bignum)
+                implementation(libs.stately.collections)
+            }
+            nodejs {
+                dependencies {
+                    api(libs.ktor.client.js)
 
+                    // workaround for https://youtrack.jetbrains.com/issue/KT-43500
+                    // (intended to be compileOnly in commonMain only)
+                    implementation(projects.kspAnnotations)
+                }
+            }
+            group("native") {
+                dependencies {
+                    // K/N doesn't support compileOnly dependencies
+                    implementation(projects.kspAnnotations)
+                }
+                mingwX64("mingw") {
+                    dependencies {
+                        implementation(libs.ktor.client.winhttp)
+                    }
+                }
+                linuxX64("linux") {
+                    dependencies {
+                        implementation(libs.ktor.client.curl)
+                    }
+                }
+                darwin {
+                    dependencies {
+                        implementation(libs.ktor.client.darwin)
+                    }
+                }
+            }
+        }
+    }
     sourceSets {
         commonMain {
             dependencies {
@@ -24,29 +65,6 @@ kotlin {
         jvmMain {
             dependencies {
                 api(libs.ktor.client.cio)
-            }
-        }
-        nonJvmMain {
-            dependencies {
-                implementation(libs.ktor.utils)
-                implementation(libs.bignum)
-                implementation(libs.stately.collections)
-            }
-        }
-        jsMain {
-            dependencies {
-                api(libs.ktor.client.js)
-
-                // workaround for https://youtrack.jetbrains.com/issue/KT-43500
-                // (intended to be compileOnly in commonMain only)
-                implementation(projects.kspAnnotations)
-            }
-        }
-        getByName("mingwMain") {
-            dependencies {
-                // K/N doesn't support compileOnly dependencies
-                implementation(projects.kspAnnotations)
-                implementation(libs.ktor.client.winhttp)
             }
         }
     }
