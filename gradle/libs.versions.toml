@@ -7,7 +7,7 @@ kotlinx-coroutines = "1.6.4" # https://github.com/Kotlin/kotlinx.coroutines
 kotlinx-serialization = "1.5.0" # https://github.com/Kotlin/kotlinx.serialization
 kotlinx-datetime = "0.4.0" # https://github.com/Kotlin/kotlinx-datetime
 kotlin-logging = "3.0.5" # https://github.com/oshai/kotlin-logging
-kord-cache = "0.5.x-SNAPSHOT" # https://github.com/kordlib/cache
+kord-cache = "0.5.x-20230411.160140-1" # https://github.com/kordlib/cache
 
 # implementation dependencies
 kotlinx-nodejs = "18.14.0-pre.502" # https://github.com/JetBrains/kotlin-wrappers
@@ -30,7 +30,7 @@ dokka = "1.8.10" # https://github.com/Kotlin/dokka
 kotlinx-atomicfu = "0.20.1" # https://github.com/Kotlin/kotlinx-atomicfu
 binary-compatibility-validator = "0.13.0" # https://github.com/Kotlin/binary-compatibility-validator
 buildconfig = "3.1.0" # https://github.com/gmazzo/gradle-buildconfig-plugin
-
+kord-plugin = "1.1.0-SNAPSHOT"
 
 [libraries]
 
@@ -89,6 +89,7 @@ dokka-plugin = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref
 atomicfu-plugin = { module = "org.jetbrains.kotlinx:atomicfu-gradle-plugin", version.ref = "kotlinx-atomicfu" }
 binary-compatibility-validator-plugin = { module = "org.jetbrains.kotlinx:binary-compatibility-validator", version.ref = "binary-compatibility-validator" }
 ksp-plugin = { module = "com.google.devtools.ksp:symbol-processing-gradle-plugin", version.ref = "ksp" }
+kord-plugin = {module = "dev.kord:kotlin-multiplatform-tools", version.ref = "kord-plugin"}
 
 
 [bundles]
@@ -106,6 +107,7 @@ pluginsForBuildSrc = [
     "atomicfu-plugin",
     "binary-compatibility-validator-plugin",
     "ksp-plugin",
+    "kord-plugin"
 ]
 
 

@@ -4,10 +4,9 @@ plugins {
 
 repositories {
     mavenCentral()
-    mavenLocal()
+    maven("https://kord.jfrog.io/artifactory/gradle-dev")
 }
 
 dependencies {
     implementation(libs.bundles.pluginsForBuildSrc)
-    implementation("dev.kord:kotlin-multiplatform-tools:0.0.1")
 }
