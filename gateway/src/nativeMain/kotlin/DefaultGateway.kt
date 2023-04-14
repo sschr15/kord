@@ -1,8 +1,7 @@
 package dev.kord.gateway
 
 import dev.kord.common.annotation.KordInternal
-import io.ktor.util.network.*
 
 @KordInternal
-public actual fun Throwable.isTimeout(): Boolean = this is UnresolvedAddressException
+public actual fun Throwable.isTimeout(): Boolean = false
 internal actual val os: String get() = Platform.osFamily.name

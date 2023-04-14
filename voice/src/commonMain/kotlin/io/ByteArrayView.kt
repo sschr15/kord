@@ -1,5 +1,7 @@
 package dev.kord.voice.io
 
+public expect class ArrayIndexOutOfBoundsException(index: Int) : IndexOutOfBoundsException
+
 /**
  * A lightweight read-only view of a ByteArray.
  */

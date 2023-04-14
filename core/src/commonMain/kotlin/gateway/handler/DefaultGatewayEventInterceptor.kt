@@ -59,7 +59,7 @@ public class DefaultGatewayEventInterceptor @KordPreview public constructor(
             }
             return null
         }.onFailure {
-            logger.error(it) { "" }
+            logger.error(it) { "An error occurred" }
         }.getOrNull()
     }
 }

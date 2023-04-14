@@ -1,5 +1,6 @@
 package dev.kord.voice.encryption
 
+import com.iwebpp.crypto.TweetNaclFast
 import dev.kord.voice.io.MutableByteArrayCursor
 import dev.kord.voice.io.mutableCursor
 
@@ -31,7 +32,7 @@ public fun XSalsa20Poly1305Codec.encrypt(
     mLength: Int = message.size,
     nonce: ByteArray
 ): ByteArray? {
-    val buffer = ByteArray(mLength + SecretBox.boxzerobytesLength)
+    val buffer = ByteArray(mLength + TweetNaclFast.SecretBox.boxzerobytesLength)
     if (!encrypt(message, mOffset, mLength, nonce, buffer.mutableCursor())) return null
     return buffer
 }
@@ -42,7 +43,7 @@ public fun XSalsa20Poly1305Codec.decrypt(
     boxLength: Int = box.size,
     nonce: ByteArray
 ): ByteArray? {
-    val buffer = ByteArray(boxLength - SecretBox.boxzerobytesLength)
+    val buffer = ByteArray(boxLength - TweetNaclFast.SecretBox.boxzerobytesLength)
     if (!decrypt(box, boxOffset, boxLength, nonce, buffer.mutableCursor())) return null
     return buffer
 }

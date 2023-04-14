@@ -3,8 +3,6 @@ package dev.kord.voice.streams
 import dev.kord.common.annotation.KordVoice
 import dev.kord.common.entity.Snowflake
 import dev.kord.voice.AudioFrame
-import dev.kord.voice.encryption.SecretBox
-import dev.kord.voice.encryption.XSalsa20Poly1305Codec
 import dev.kord.voice.encryption.strategies.NonceStrategy
 import dev.kord.voice.gateway.Speaking
 import dev.kord.voice.gateway.VoiceGateway
@@ -22,7 +20,7 @@ import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.flow.*
 import mu.KotlinLogging
 
-private val defaultStreamsLogger = KotlinLogging.logger { }
+internal val defaultStreamsLogger = KotlinLogging.logger { }
 
 @KordVoice
 public class DefaultStreams(
@@ -47,7 +45,7 @@ public class DefaultStreams(
             .buffer(Channel.UNLIMITED)
             .onEach { speaking ->
                 _ssrcToUser.update {
-                    it.computeIfAbsent(speaking.ssrc) {
+                    it.getOrPut(speaking.ssrc) {
                         incomingAudioFrames
                             .filter { (ssrc, _) -> speaking.ssrc == ssrc }
                             .map { (_, frame) -> speaking.userId to frame }
@@ -86,38 +84,7 @@ public class DefaultStreams(
     override val ssrcToUser: Map<UInt, Snowflake> get() = _ssrcToUser.value
 }
 
-private fun Flow<RTPPacket>.decrypt(nonceStrategy: NonceStrategy, key: ByteArray): Flow<RTPPacket> {
-    val codec = XSalsa20Poly1305Codec(key)
-    val nonceBuffer = ByteArray(SecretBox.nonceLength).mutableCursor()
-
-    val decryptedBuffer = ByteArray(512)
-    val decryptedCursor = decryptedBuffer.mutableCursor()
-    val decryptedView = decryptedBuffer.view()
-
-    return mapNotNull {
-        nonceBuffer.reset()
-        decryptedCursor.reset()
-
-        nonceBuffer.writeByteView(nonceStrategy.strip(it))
-
-        val decrypted = with(it.payload) {
-            codec.decrypt(data, dataStart, viewSize, nonceBuffer.data, decryptedCursor)
-        }
-
-        if (!decrypted) {
-            defaultStreamsLogger.trace { "failed to decrypt the packet with data ${it.payload.data.contentToString()} at offset ${it.payload.dataStart} and length ${it.payload.viewSize - 4}" }
-            return@mapNotNull null
-        }
-
-        decryptedView.resize(0, decryptedCursor.cursor)
-
-        // mutate the payload data and update the view
-        it.payload.data.mutableCursor().writeByteViewOrResize(decryptedView)
-        it.payload.resize(0, decryptedView.viewSize)
-
-        it
-    }
-}
+internal expect fun Flow<RTPPacket>.decrypt(nonceStrategy: NonceStrategy, key: ByteArray): Flow<RTPPacket>
 
 private fun Flow<RTPPacket>.clean(): Flow<RTPPacket> {
     fun processExtensionHeader(payload: ByteArrayView) = with(payload.readableCursor()) {

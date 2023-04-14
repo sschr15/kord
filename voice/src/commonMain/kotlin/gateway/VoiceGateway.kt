@@ -112,7 +112,7 @@ public inline fun <reified T : VoiceEvent> VoiceGateway.on(
     return this.events.buffer(Channel.UNLIMITED).filterIsInstance<T>().onEach {
         scope.launch {
             it.runCatching { it.consumer() }.onFailure {
-                voiceGatewayOnLogger.error(it) { "An error occurred in an event listener" }
+                voiceGatewayOnLogger.error(it) { "An error occurred" }
             }
         }
     }.launchIn(scope)

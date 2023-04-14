@@ -88,7 +88,7 @@ public class DefaultVoiceGateway(
             } catch (exception: Exception) {
                 if (exception is CancellationException) break
 
-                defaultVoiceGatewayLogger.error(exception) { "An error ocurred whilst establishing gateway connection" }
+                defaultVoiceGatewayLogger.error(exception) { "An error occurred whilst handling a voice event" }
                 if (exception.isTimeout()) {
                     data.eventFlow.emit(Close.Timeout)
                 }
@@ -112,9 +112,9 @@ public class DefaultVoiceGateway(
             try {
                 handleClose()
             } catch (exception: CancellationException) {
-                defaultVoiceGatewayLogger.trace(exception) { "" }
+                defaultVoiceGatewayLogger.trace(exception) { "An error occurred" }
             } catch (exception: Exception) {
-                defaultVoiceGatewayLogger.error(exception) { "" }
+                defaultVoiceGatewayLogger.error(exception) { "An error occurred" }
             }
 
             defaultVoiceGatewayLogger.trace { "handled voice gateway connection closed" }
@@ -154,7 +154,7 @@ public class DefaultVoiceGateway(
 
             data.eventFlow.emit(event)
         } catch (exception: Exception) {
-            defaultVoiceGatewayLogger.error(exception) { "An error ocurred whilst decoding voice gateway event" }
+            defaultVoiceGatewayLogger.error(exception) { "An error occurred" }
         }
     }
 
