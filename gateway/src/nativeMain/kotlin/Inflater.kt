@@ -12,6 +12,7 @@ internal actual class Inflater : Closeable {
     private val zStream = nativeHeap.alloc<z_stream>().apply {
         val initResponse = inflateInit2(ptr, MAX_WBITS)
         if (initResponse != Z_OK) {
+            nativeHeap.free(this)
             throw IllegalStateException("Could not initialize zlib: $initResponse")
         }
     }
