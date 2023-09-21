@@ -2817,7 +2817,6 @@ public final class dev/kord/rest/json/JsonErrorCode$Companion {
 
 public final class dev/kord/rest/json/request/ApplicationCommandCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/ApplicationCommandCreateRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/ApplicationCommandType;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/ApplicationCommandType;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;)V
 	public synthetic fun <init> (Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/ApplicationCommandType;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
@@ -2845,7 +2844,6 @@ public final class dev/kord/rest/json/request/ApplicationCommandCreateRequest {
 	public final fun getType ()Ldev/kord/common/entity/ApplicationCommandType;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/ApplicationCommandCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/ApplicationCommandCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -2866,7 +2864,6 @@ public final class dev/kord/rest/json/request/ApplicationCommandCreateRequest$Co
 public final class dev/kord/rest/json/request/ApplicationCommandModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/ApplicationCommandModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -2892,7 +2889,6 @@ public final class dev/kord/rest/json/request/ApplicationCommandModifyRequest {
 	public final fun getOptions ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/ApplicationCommandModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/ApplicationCommandModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -2933,7 +2929,6 @@ public final class dev/kord/rest/json/request/AuditLogGetRequest {
 
 public final class dev/kord/rest/json/request/AutoCompleteResponseCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/AutoCompleteResponseCreateRequest$Companion;
-	public synthetic fun <init> (ILdev/kord/common/entity/InteractionResponseType;Ldev/kord/common/entity/DiscordAutoComplete;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/InteractionResponseType;Ldev/kord/common/entity/DiscordAutoComplete;)V
 	public final fun component1 ()Ldev/kord/common/entity/InteractionResponseType;
 	public final fun component2 ()Ldev/kord/common/entity/DiscordAutoComplete;
@@ -2944,7 +2939,6 @@ public final class dev/kord/rest/json/request/AutoCompleteResponseCreateRequest 
 	public final fun getType ()Ldev/kord/common/entity/InteractionResponseType;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/AutoCompleteResponseCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/AutoCompleteResponseCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -2965,7 +2959,6 @@ public final class dev/kord/rest/json/request/AutoCompleteResponseCreateRequest$
 
 public final class dev/kord/rest/json/request/AutoModerationRuleCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/AutoModerationRuleCreateRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ldev/kord/common/entity/AutoModerationRuleEventType;Ldev/kord/common/entity/AutoModerationRuleTriggerType;Ldev/kord/common/entity/optional/Optional;Ljava/util/List;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ldev/kord/common/entity/AutoModerationRuleEventType;Ldev/kord/common/entity/AutoModerationRuleTriggerType;Ldev/kord/common/entity/optional/Optional;Ljava/util/List;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ljava/lang/String;Ldev/kord/common/entity/AutoModerationRuleEventType;Ldev/kord/common/entity/AutoModerationRuleTriggerType;Ldev/kord/common/entity/optional/Optional;Ljava/util/List;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
@@ -2989,7 +2982,6 @@ public final class dev/kord/rest/json/request/AutoModerationRuleCreateRequest {
 	public final fun getTriggerType ()Ldev/kord/common/entity/AutoModerationRuleTriggerType;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/AutoModerationRuleCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/AutoModerationRuleCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3010,7 +3002,6 @@ public final class dev/kord/rest/json/request/AutoModerationRuleCreateRequest$Co
 public final class dev/kord/rest/json/request/AutoModerationRuleModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/AutoModerationRuleModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -3032,7 +3023,6 @@ public final class dev/kord/rest/json/request/AutoModerationRuleModifyRequest {
 	public final fun getTriggerMetadata ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/AutoModerationRuleModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/AutoModerationRuleModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3052,7 +3042,6 @@ public final class dev/kord/rest/json/request/AutoModerationRuleModifyRequest$Co
 
 public final class dev/kord/rest/json/request/BulkDeleteRequest {
 	public static final field Companion Ldev/kord/rest/json/request/BulkDeleteRequest$Companion;
-	public synthetic fun <init> (ILjava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/util/List;)V
 	public final fun component1 ()Ljava/util/List;
 	public final fun copy (Ljava/util/List;)Ldev/kord/rest/json/request/BulkDeleteRequest;
@@ -3061,7 +3050,6 @@ public final class dev/kord/rest/json/request/BulkDeleteRequest {
 	public final fun getMessages ()Ljava/util/List;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/BulkDeleteRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/BulkDeleteRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3081,7 +3069,6 @@ public final class dev/kord/rest/json/request/BulkDeleteRequest$Companion {
 
 public final class dev/kord/rest/json/request/ChannelFollowRequest {
 	public static final field Companion Ldev/kord/rest/json/request/ChannelFollowRequest$Companion;
-	public synthetic fun <init> (ILdev/kord/common/entity/Snowflake;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/Snowflake;)V
 	public final fun component1 ()Ldev/kord/common/entity/Snowflake;
 	public final fun copy (Ldev/kord/common/entity/Snowflake;)Ldev/kord/rest/json/request/ChannelFollowRequest;
@@ -3090,7 +3077,6 @@ public final class dev/kord/rest/json/request/ChannelFollowRequest {
 	public final fun getWebhookChannelId ()Ldev/kord/common/entity/Snowflake;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/ChannelFollowRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/ChannelFollowRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3111,7 +3097,6 @@ public final class dev/kord/rest/json/request/ChannelFollowRequest$Companion {
 public final class dev/kord/rest/json/request/ChannelModifyPatchRequest {
 	public static final field Companion Ldev/kord/rest/json/request/ChannelModifyPatchRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -3165,7 +3150,6 @@ public final class dev/kord/rest/json/request/ChannelModifyPatchRequest {
 	public final fun getVideoQualityMode ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/ChannelModifyPatchRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/ChannelModifyPatchRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3185,7 +3169,6 @@ public final class dev/kord/rest/json/request/ChannelModifyPatchRequest$Companio
 
 public final class dev/kord/rest/json/request/ChannelModifyPutRequest {
 	public static final field Companion Ldev/kord/rest/json/request/ChannelModifyPutRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;ILjava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/util/List;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/util/List;Ljava/lang/String;)V
 	public synthetic fun <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/util/List;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
@@ -3211,7 +3194,6 @@ public final class dev/kord/rest/json/request/ChannelModifyPutRequest {
 	public final fun getUserLimit ()Ljava/lang/Integer;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/ChannelModifyPutRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/ChannelModifyPutRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3231,7 +3213,6 @@ public final class dev/kord/rest/json/request/ChannelModifyPutRequest$Companion 
 
 public final class dev/kord/rest/json/request/ChannelPermissionEditRequest {
 	public static final field Companion Ldev/kord/rest/json/request/ChannelPermissionEditRequest$Companion;
-	public synthetic fun <init> (ILdev/kord/common/entity/Permissions;Ldev/kord/common/entity/Permissions;Ldev/kord/common/entity/OverwriteType;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/Permissions;Ldev/kord/common/entity/Permissions;Ldev/kord/common/entity/OverwriteType;)V
 	public final fun component1 ()Ldev/kord/common/entity/Permissions;
 	public final fun component2 ()Ldev/kord/common/entity/Permissions;
@@ -3244,7 +3225,6 @@ public final class dev/kord/rest/json/request/ChannelPermissionEditRequest {
 	public final fun getType ()Ldev/kord/common/entity/OverwriteType;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/ChannelPermissionEditRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/ChannelPermissionEditRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3264,7 +3244,6 @@ public final class dev/kord/rest/json/request/ChannelPermissionEditRequest$Compa
 
 public final class dev/kord/rest/json/request/ChannelPositionSwapRequest {
 	public static final field Companion Ldev/kord/rest/json/request/ChannelPositionSwapRequest$Companion;
-	public synthetic fun <init> (ILdev/kord/common/entity/Snowflake;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalSnowflake;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalSnowflake;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalSnowflake;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/Snowflake;
@@ -3280,7 +3259,6 @@ public final class dev/kord/rest/json/request/ChannelPositionSwapRequest {
 	public final fun getPosition ()Ldev/kord/common/entity/optional/OptionalInt;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/ChannelPositionSwapRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/ChannelPositionSwapRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3301,7 +3279,6 @@ public final class dev/kord/rest/json/request/ChannelPositionSwapRequest$Compani
 public final class dev/kord/rest/json/request/CurrentUserModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/CurrentUserModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -3313,7 +3290,6 @@ public final class dev/kord/rest/json/request/CurrentUserModifyRequest {
 	public final fun getUsername ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/CurrentUserModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/CurrentUserModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3334,7 +3310,6 @@ public final class dev/kord/rest/json/request/CurrentUserModifyRequest$Companion
 public final class dev/kord/rest/json/request/CurrentUserNicknameModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/CurrentUserNicknameModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -3344,7 +3319,6 @@ public final class dev/kord/rest/json/request/CurrentUserNicknameModifyRequest {
 	public final fun getNick ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/CurrentUserNicknameModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/CurrentUserNicknameModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3365,7 +3339,6 @@ public final class dev/kord/rest/json/request/CurrentUserNicknameModifyRequest$C
 public final class dev/kord/rest/json/request/CurrentVoiceStateModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/CurrentVoiceStateModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/OptionalSnowflake;
@@ -3379,7 +3352,6 @@ public final class dev/kord/rest/json/request/CurrentVoiceStateModifyRequest {
 	public final fun getSuppress ()Ldev/kord/common/entity/optional/OptionalBoolean;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/CurrentVoiceStateModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/CurrentVoiceStateModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3399,7 +3371,6 @@ public final class dev/kord/rest/json/request/CurrentVoiceStateModifyRequest$Com
 
 public final class dev/kord/rest/json/request/DMCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/DMCreateRequest$Companion;
-	public synthetic fun <init> (ILdev/kord/common/entity/Snowflake;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/Snowflake;)V
 	public final fun component1 ()Ldev/kord/common/entity/Snowflake;
 	public final fun copy (Ldev/kord/common/entity/Snowflake;)Ldev/kord/rest/json/request/DMCreateRequest;
@@ -3408,7 +3379,6 @@ public final class dev/kord/rest/json/request/DMCreateRequest {
 	public final fun getUserId ()Ldev/kord/common/entity/Snowflake;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/DMCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/DMCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3429,7 +3399,6 @@ public final class dev/kord/rest/json/request/DMCreateRequest$Companion {
 public final class dev/kord/rest/json/request/EmbedAuthorRequest {
 	public static final field Companion Ldev/kord/rest/json/request/EmbedAuthorRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -3443,7 +3412,6 @@ public final class dev/kord/rest/json/request/EmbedAuthorRequest {
 	public final fun getUrl ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/EmbedAuthorRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/EmbedAuthorRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3463,7 +3431,6 @@ public final class dev/kord/rest/json/request/EmbedAuthorRequest$Companion {
 
 public final class dev/kord/rest/json/request/EmbedFieldRequest {
 	public static final field Companion Ldev/kord/rest/json/request/EmbedFieldRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Ldev/kord/common/entity/optional/OptionalBoolean;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ldev/kord/common/entity/optional/OptionalBoolean;)V
 	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ldev/kord/common/entity/optional/OptionalBoolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
@@ -3477,7 +3444,6 @@ public final class dev/kord/rest/json/request/EmbedFieldRequest {
 	public final fun getValue ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/EmbedFieldRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/EmbedFieldRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3497,7 +3463,6 @@ public final class dev/kord/rest/json/request/EmbedFieldRequest$Companion {
 
 public final class dev/kord/rest/json/request/EmbedFooterRequest {
 	public static final field Companion Ldev/kord/rest/json/request/EmbedFooterRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
 	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
@@ -3509,7 +3474,6 @@ public final class dev/kord/rest/json/request/EmbedFooterRequest {
 	public final fun getText ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/EmbedFooterRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/EmbedFooterRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3529,7 +3493,6 @@ public final class dev/kord/rest/json/request/EmbedFooterRequest$Companion {
 
 public final class dev/kord/rest/json/request/EmbedImageRequest {
 	public static final field Companion Ldev/kord/rest/json/request/EmbedImageRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun copy (Ljava/lang/String;)Ldev/kord/rest/json/request/EmbedImageRequest;
@@ -3538,7 +3501,6 @@ public final class dev/kord/rest/json/request/EmbedImageRequest {
 	public final fun getUrl ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/EmbedImageRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/EmbedImageRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3559,7 +3521,6 @@ public final class dev/kord/rest/json/request/EmbedImageRequest$Companion {
 public final class dev/kord/rest/json/request/EmbedRequest {
 	public static final field Companion Ldev/kord/rest/json/request/EmbedRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -3589,7 +3550,6 @@ public final class dev/kord/rest/json/request/EmbedRequest {
 	public final fun getUrl ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/EmbedRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/EmbedRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3609,7 +3569,6 @@ public final class dev/kord/rest/json/request/EmbedRequest$Companion {
 
 public final class dev/kord/rest/json/request/EmbedThumbnailRequest {
 	public static final field Companion Ldev/kord/rest/json/request/EmbedThumbnailRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun copy (Ljava/lang/String;)Ldev/kord/rest/json/request/EmbedThumbnailRequest;
@@ -3618,7 +3577,6 @@ public final class dev/kord/rest/json/request/EmbedThumbnailRequest {
 	public final fun getUrl ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/EmbedThumbnailRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/EmbedThumbnailRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3638,7 +3596,6 @@ public final class dev/kord/rest/json/request/EmbedThumbnailRequest$Companion {
 
 public final class dev/kord/rest/json/request/EmojiCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/EmojiCreateRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Ljava/util/Set;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
@@ -3651,7 +3608,6 @@ public final class dev/kord/rest/json/request/EmojiCreateRequest {
 	public final fun getRoles ()Ljava/util/Set;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/EmojiCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/EmojiCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3672,7 +3628,6 @@ public final class dev/kord/rest/json/request/EmojiCreateRequest$Companion {
 public final class dev/kord/rest/json/request/EmojiModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/EmojiModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -3684,7 +3639,6 @@ public final class dev/kord/rest/json/request/EmojiModifyRequest {
 	public final fun getRoles ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/EmojiModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/EmojiModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3705,7 +3659,6 @@ public final class dev/kord/rest/json/request/EmojiModifyRequest$Companion {
 public final class dev/kord/rest/json/request/FollowupMessageCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/FollowupMessageCreateRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -3729,7 +3682,6 @@ public final class dev/kord/rest/json/request/FollowupMessageCreateRequest {
 	public final fun getUsername ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/FollowupMessageCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/FollowupMessageCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3750,7 +3702,6 @@ public final class dev/kord/rest/json/request/FollowupMessageCreateRequest$Compa
 public final class dev/kord/rest/json/request/FollowupMessageModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/FollowupMessageModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -3770,7 +3721,6 @@ public final class dev/kord/rest/json/request/FollowupMessageModifyRequest {
 	public final fun getFlags ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/FollowupMessageModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/FollowupMessageModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3790,7 +3740,6 @@ public final class dev/kord/rest/json/request/FollowupMessageModifyRequest$Compa
 
 public final class dev/kord/rest/json/request/ForumTagRequest {
 	public static final field Companion Ldev/kord/rest/json/request/ForumTagRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ljava/lang/String;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
@@ -3806,7 +3755,6 @@ public final class dev/kord/rest/json/request/ForumTagRequest {
 	public final fun getName ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/ForumTagRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/ForumTagRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3827,7 +3775,6 @@ public final class dev/kord/rest/json/request/ForumTagRequest$Companion {
 public final class dev/kord/rest/json/request/ForumThreadMessageRequest {
 	public static final field Companion Ldev/kord/rest/json/request/ForumThreadMessageRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -3847,7 +3794,6 @@ public final class dev/kord/rest/json/request/ForumThreadMessageRequest {
 	public final fun getStickerIds ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/ForumThreadMessageRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/ForumThreadMessageRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3867,7 +3813,6 @@ public final class dev/kord/rest/json/request/ForumThreadMessageRequest$Companio
 
 public final class dev/kord/rest/json/request/GroupDMCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GroupDMCreateRequest$Companion;
-	public synthetic fun <init> (ILjava/util/List;Ljava/util/Map;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/util/List;Ljava/util/Map;)V
 	public final fun component1 ()Ljava/util/List;
 	public final fun component2 ()Ljava/util/Map;
@@ -3878,7 +3823,6 @@ public final class dev/kord/rest/json/request/GroupDMCreateRequest {
 	public final fun getTokens ()Ljava/util/List;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GroupDMCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GroupDMCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3899,7 +3843,6 @@ public final class dev/kord/rest/json/request/GroupDMCreateRequest$Companion {
 public final class dev/kord/rest/json/request/GuildBanCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildBanCreateRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -3909,7 +3852,6 @@ public final class dev/kord/rest/json/request/GuildBanCreateRequest {
 	public final fun getDeleteMessageSeconds ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildBanCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildBanCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -3929,7 +3871,6 @@ public final class dev/kord/rest/json/request/GuildBanCreateRequest$Companion {
 
 public final class dev/kord/rest/json/request/GuildChannelCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildChannelCreateRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ldev/kord/common/entity/ChannelType;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ldev/kord/common/entity/ChannelType;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ljava/lang/String;Ldev/kord/common/entity/ChannelType;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
@@ -3973,7 +3914,6 @@ public final class dev/kord/rest/json/request/GuildChannelCreateRequest {
 	public final fun getUserLimit ()Ldev/kord/common/entity/optional/OptionalInt;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildChannelCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildChannelCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4009,7 +3949,6 @@ public final class dev/kord/rest/json/request/GuildChannelPositionModifyRequest$
 
 public final class dev/kord/rest/json/request/GuildCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildCreateRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;)V
 	public synthetic fun <init> (Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
@@ -4039,7 +3978,6 @@ public final class dev/kord/rest/json/request/GuildCreateRequest {
 	public final fun getVerificationLevel ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4059,7 +3997,6 @@ public final class dev/kord/rest/json/request/GuildCreateRequest$Companion {
 
 public final class dev/kord/rest/json/request/GuildFromTemplateCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildFromTemplateCreateRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
@@ -4071,7 +4008,6 @@ public final class dev/kord/rest/json/request/GuildFromTemplateCreateRequest {
 	public final fun getName ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildFromTemplateCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildFromTemplateCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4091,7 +4027,6 @@ public final class dev/kord/rest/json/request/GuildFromTemplateCreateRequest$Com
 
 public final class dev/kord/rest/json/request/GuildIntegrationCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildIntegrationCreateRequest$Companion;
-	public synthetic fun <init> (IILjava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (ILjava/lang/String;)V
 	public final fun component1 ()I
 	public final fun component2 ()Ljava/lang/String;
@@ -4102,7 +4037,6 @@ public final class dev/kord/rest/json/request/GuildIntegrationCreateRequest {
 	public final fun getType ()I
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildIntegrationCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildIntegrationCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4123,7 +4057,6 @@ public final class dev/kord/rest/json/request/GuildIntegrationCreateRequest$Comp
 public final class dev/kord/rest/json/request/GuildIntegrationModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildIntegrationModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/OptionalBoolean;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/OptionalBoolean;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/OptionalBoolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -4137,7 +4070,6 @@ public final class dev/kord/rest/json/request/GuildIntegrationModifyRequest {
 	public final fun getExpirePeriod ()Ldev/kord/common/entity/optional/OptionalInt;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildIntegrationModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildIntegrationModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4157,7 +4089,6 @@ public final class dev/kord/rest/json/request/GuildIntegrationModifyRequest$Comp
 
 public final class dev/kord/rest/json/request/GuildMFALevelModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildMFALevelModifyRequest$Companion;
-	public synthetic fun <init> (ILdev/kord/common/entity/MFALevel;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/MFALevel;)V
 	public final fun component1 ()Ldev/kord/common/entity/MFALevel;
 	public final fun copy (Ldev/kord/common/entity/MFALevel;)Ldev/kord/rest/json/request/GuildMFALevelModifyRequest;
@@ -4166,7 +4097,6 @@ public final class dev/kord/rest/json/request/GuildMFALevelModifyRequest {
 	public final fun getLevel ()Ldev/kord/common/entity/MFALevel;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildMFALevelModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildMFALevelModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4186,7 +4116,6 @@ public final class dev/kord/rest/json/request/GuildMFALevelModifyRequest$Compani
 
 public final class dev/kord/rest/json/request/GuildMemberAddRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildMemberAddRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
@@ -4206,7 +4135,6 @@ public final class dev/kord/rest/json/request/GuildMemberAddRequest {
 	public final fun getToken ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildMemberAddRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildMemberAddRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4227,7 +4155,6 @@ public final class dev/kord/rest/json/request/GuildMemberAddRequest$Companion {
 public final class dev/kord/rest/json/request/GuildMemberModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildMemberModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -4249,7 +4176,6 @@ public final class dev/kord/rest/json/request/GuildMemberModifyRequest {
 	public final fun getRoles ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildMemberModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildMemberModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4270,7 +4196,6 @@ public final class dev/kord/rest/json/request/GuildMemberModifyRequest$Companion
 public final class dev/kord/rest/json/request/GuildModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -4312,7 +4237,6 @@ public final class dev/kord/rest/json/request/GuildModifyRequest {
 	public final fun getVerificationLevel ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4333,7 +4257,6 @@ public final class dev/kord/rest/json/request/GuildModifyRequest$Companion {
 public final class dev/kord/rest/json/request/GuildOnboardingModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildOnboardingModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -4349,7 +4272,6 @@ public final class dev/kord/rest/json/request/GuildOnboardingModifyRequest {
 	public final fun getPrompts ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildOnboardingModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildOnboardingModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4370,7 +4292,6 @@ public final class dev/kord/rest/json/request/GuildOnboardingModifyRequest$Compa
 public final class dev/kord/rest/json/request/GuildRoleCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildRoleCreateRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalSnowflake;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalSnowflake;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalSnowflake;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -4394,7 +4315,6 @@ public final class dev/kord/rest/json/request/GuildRoleCreateRequest {
 	public final fun getUnicodeEmoji ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildRoleCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildRoleCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4415,7 +4335,6 @@ public final class dev/kord/rest/json/request/GuildRoleCreateRequest$Companion {
 public final class dev/kord/rest/json/request/GuildRoleModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildRoleModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -4437,7 +4356,6 @@ public final class dev/kord/rest/json/request/GuildRoleModifyRequest {
 	public final fun getUnicodeEmoji ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildRoleModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildRoleModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4473,7 +4391,6 @@ public final class dev/kord/rest/json/request/GuildRolePositionModifyRequest$Com
 
 public final class dev/kord/rest/json/request/GuildScheduledEventCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildScheduledEventCreateRequest$Companion;
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ljava/lang/String;Ldev/kord/common/entity/GuildScheduledEventPrivacyLevel;Lkotlinx/datetime/Instant;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/ScheduledEntityType;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ljava/lang/String;Ldev/kord/common/entity/GuildScheduledEventPrivacyLevel;Lkotlinx/datetime/Instant;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/ScheduledEntityType;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ljava/lang/String;Ldev/kord/common/entity/GuildScheduledEventPrivacyLevel;Lkotlinx/datetime/Instant;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/ScheduledEntityType;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/OptionalSnowflake;
@@ -4499,7 +4416,6 @@ public final class dev/kord/rest/json/request/GuildScheduledEventCreateRequest {
 	public final fun getScheduledStartTime ()Lkotlinx/datetime/Instant;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildScheduledEventCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildScheduledEventCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4519,7 +4435,6 @@ public final class dev/kord/rest/json/request/GuildScheduledEventCreateRequest$C
 
 public final class dev/kord/rest/json/request/GuildScheduledEventUsersResponse {
 	public static final field Companion Ldev/kord/rest/json/request/GuildScheduledEventUsersResponse$Companion;
-	public synthetic fun <init> (ILdev/kord/common/entity/Snowflake;Ldev/kord/common/entity/DiscordUser;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/DiscordUser;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/DiscordUser;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/Snowflake;
@@ -4533,7 +4448,6 @@ public final class dev/kord/rest/json/request/GuildScheduledEventUsersResponse {
 	public final fun getUser ()Ldev/kord/common/entity/DiscordUser;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildScheduledEventUsersResponse;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildScheduledEventUsersResponse$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4553,7 +4467,6 @@ public final class dev/kord/rest/json/request/GuildScheduledEventUsersResponse$C
 
 public final class dev/kord/rest/json/request/GuildStickerCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildStickerCreateRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
@@ -4566,7 +4479,6 @@ public final class dev/kord/rest/json/request/GuildStickerCreateRequest {
 	public final fun getTags ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildStickerCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildStickerCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4587,7 +4499,6 @@ public final class dev/kord/rest/json/request/GuildStickerCreateRequest$Companio
 public final class dev/kord/rest/json/request/GuildStickerModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildStickerModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -4601,7 +4512,6 @@ public final class dev/kord/rest/json/request/GuildStickerModifyRequest {
 	public final fun getTags ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildStickerModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildStickerModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4621,7 +4531,6 @@ public final class dev/kord/rest/json/request/GuildStickerModifyRequest$Companio
 
 public final class dev/kord/rest/json/request/GuildTemplateCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildTemplateCreateRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
@@ -4633,7 +4542,6 @@ public final class dev/kord/rest/json/request/GuildTemplateCreateRequest {
 	public final fun getName ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildTemplateCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildTemplateCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4654,7 +4562,6 @@ public final class dev/kord/rest/json/request/GuildTemplateCreateRequest$Compani
 public final class dev/kord/rest/json/request/GuildTemplateModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildTemplateModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -4666,7 +4573,6 @@ public final class dev/kord/rest/json/request/GuildTemplateModifyRequest {
 	public final fun getName ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildTemplateModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildTemplateModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4687,7 +4593,6 @@ public final class dev/kord/rest/json/request/GuildTemplateModifyRequest$Compani
 public final class dev/kord/rest/json/request/GuildWelcomeScreenModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildWelcomeScreenModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/OptionalBoolean;
@@ -4701,7 +4606,6 @@ public final class dev/kord/rest/json/request/GuildWelcomeScreenModifyRequest {
 	public final fun getWelcomeScreenChannels ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildWelcomeScreenModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildWelcomeScreenModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4722,7 +4626,6 @@ public final class dev/kord/rest/json/request/GuildWelcomeScreenModifyRequest$Co
 public final class dev/kord/rest/json/request/GuildWidgetModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/GuildWidgetModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalSnowflake;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalSnowflake;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalSnowflake;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/OptionalBoolean;
@@ -4734,7 +4637,6 @@ public final class dev/kord/rest/json/request/GuildWidgetModifyRequest {
 	public final fun getEnabled ()Ldev/kord/common/entity/optional/OptionalBoolean;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/GuildWidgetModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/GuildWidgetModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4755,7 +4657,6 @@ public final class dev/kord/rest/json/request/GuildWidgetModifyRequest$Companion
 public final class dev/kord/rest/json/request/InteractionApplicationCommandCallbackData {
 	public static final field Companion Ldev/kord/rest/json/request/InteractionApplicationCommandCallbackData$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/OptionalBoolean;
@@ -4775,7 +4676,6 @@ public final class dev/kord/rest/json/request/InteractionApplicationCommandCallb
 	public final fun getTts ()Ldev/kord/common/entity/optional/OptionalBoolean;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/InteractionApplicationCommandCallbackData;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/InteractionApplicationCommandCallbackData$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4795,7 +4695,6 @@ public final class dev/kord/rest/json/request/InteractionApplicationCommandCallb
 
 public final class dev/kord/rest/json/request/InteractionResponseCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/InteractionResponseCreateRequest$Companion;
-	public synthetic fun <init> (ILdev/kord/common/entity/InteractionResponseType;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/InteractionResponseType;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/InteractionResponseType;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/InteractionResponseType;
@@ -4807,7 +4706,6 @@ public final class dev/kord/rest/json/request/InteractionResponseCreateRequest {
 	public final fun getType ()Ldev/kord/common/entity/InteractionResponseType;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/InteractionResponseCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/InteractionResponseCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4828,7 +4726,6 @@ public final class dev/kord/rest/json/request/InteractionResponseCreateRequest$C
 public final class dev/kord/rest/json/request/InteractionResponseModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/InteractionResponseModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -4848,7 +4745,6 @@ public final class dev/kord/rest/json/request/InteractionResponseModifyRequest {
 	public final fun getFlags ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/InteractionResponseModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/InteractionResponseModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4869,7 +4765,6 @@ public final class dev/kord/rest/json/request/InteractionResponseModifyRequest$C
 public final class dev/kord/rest/json/request/InviteCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/InviteCreateRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalSnowflake;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalSnowflake;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/OptionalSnowflake;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -4891,7 +4786,6 @@ public final class dev/kord/rest/json/request/InviteCreateRequest {
 	public final fun getUnique ()Ldev/kord/common/entity/optional/OptionalBoolean;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/InviteCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/InviteCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4942,7 +4836,6 @@ public final class dev/kord/rest/json/request/ListThreadsByTimestampRequest {
 public final class dev/kord/rest/json/request/MessageCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/MessageCreateRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -4966,7 +4859,6 @@ public final class dev/kord/rest/json/request/MessageCreateRequest {
 	public final fun getTts ()Ldev/kord/common/entity/optional/OptionalBoolean;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/MessageCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/MessageCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -4987,7 +4879,6 @@ public final class dev/kord/rest/json/request/MessageCreateRequest$Companion {
 public final class dev/kord/rest/json/request/MessageEditPatchRequest {
 	public static final field Companion Ldev/kord/rest/json/request/MessageEditPatchRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -5007,7 +4898,6 @@ public final class dev/kord/rest/json/request/MessageEditPatchRequest {
 	public final fun getFlags ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/MessageEditPatchRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/MessageEditPatchRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5027,7 +4917,6 @@ public final class dev/kord/rest/json/request/MessageEditPatchRequest$Companion 
 
 public final class dev/kord/rest/json/request/ModalResponseCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/ModalResponseCreateRequest$Companion;
-	public synthetic fun <init> (ILdev/kord/common/entity/InteractionResponseType;Ldev/kord/common/entity/DiscordModal;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/InteractionResponseType;Ldev/kord/common/entity/DiscordModal;)V
 	public final fun component1 ()Ldev/kord/common/entity/InteractionResponseType;
 	public final fun component2 ()Ldev/kord/common/entity/DiscordModal;
@@ -5038,7 +4927,6 @@ public final class dev/kord/rest/json/request/ModalResponseCreateRequest {
 	public final fun getType ()Ldev/kord/common/entity/InteractionResponseType;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/ModalResponseCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/ModalResponseCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5211,7 +5099,6 @@ public final class dev/kord/rest/json/request/MultipartWebhookEditMessageRequest
 
 public final class dev/kord/rest/json/request/OnboardingPromptOptionRequest {
 	public static final field Companion Ldev/kord/rest/json/request/OnboardingPromptOptionRequest$Companion;
-	public synthetic fun <init> (ILjava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/util/List;
 	public final fun component2 ()Ljava/util/List;
@@ -5226,7 +5113,6 @@ public final class dev/kord/rest/json/request/OnboardingPromptOptionRequest {
 	public final fun getTitle ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/OnboardingPromptOptionRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/OnboardingPromptOptionRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5246,7 +5132,6 @@ public final class dev/kord/rest/json/request/OnboardingPromptOptionRequest$Comp
 
 public final class dev/kord/rest/json/request/OnboardingPromptRequest {
 	public static final field Companion Ldev/kord/rest/json/request/OnboardingPromptRequest$Companion;
-	public synthetic fun <init> (ILdev/kord/common/entity/Snowflake;Ldev/kord/common/entity/OnboardingPromptType;Ljava/util/List;Ljava/lang/String;ZZZLkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/OnboardingPromptType;Ljava/util/List;Ljava/lang/String;ZZZ)V
 	public final fun component1 ()Ldev/kord/common/entity/Snowflake;
 	public final fun component2 ()Ldev/kord/common/entity/OnboardingPromptType;
@@ -5267,7 +5152,6 @@ public final class dev/kord/rest/json/request/OnboardingPromptRequest {
 	public final fun getType ()Ldev/kord/common/entity/OnboardingPromptType;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/OnboardingPromptRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/OnboardingPromptRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5288,7 +5172,6 @@ public final class dev/kord/rest/json/request/OnboardingPromptRequest$Companion 
 public final class dev/kord/rest/json/request/ScheduledEventModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/ScheduledEventModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/OptionalSnowflake;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/OptionalSnowflake;
@@ -5316,7 +5199,6 @@ public final class dev/kord/rest/json/request/ScheduledEventModifyRequest {
 	public final fun getStatus ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/ScheduledEventModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/ScheduledEventModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5336,7 +5218,6 @@ public final class dev/kord/rest/json/request/ScheduledEventModifyRequest$Compan
 
 public final class dev/kord/rest/json/request/StageInstanceCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/StageInstanceCreateRequest$Companion;
-	public synthetic fun <init> (ILdev/kord/common/entity/Snowflake;Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/Snowflake;Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/Snowflake;Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/Snowflake;
@@ -5352,7 +5233,6 @@ public final class dev/kord/rest/json/request/StageInstanceCreateRequest {
 	public final fun getTopic ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/StageInstanceCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/StageInstanceCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5373,7 +5253,6 @@ public final class dev/kord/rest/json/request/StageInstanceCreateRequest$Compani
 public final class dev/kord/rest/json/request/StageInstanceModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/StageInstanceModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -5385,7 +5264,6 @@ public final class dev/kord/rest/json/request/StageInstanceModifyRequest {
 	public final fun getTopic ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/StageInstanceModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/StageInstanceModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5405,7 +5283,6 @@ public final class dev/kord/rest/json/request/StageInstanceModifyRequest$Compani
 
 public final class dev/kord/rest/json/request/StartThreadRequest {
 	public static final field Companion Ldev/kord/rest/json/request/StartThreadRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
@@ -5427,7 +5304,6 @@ public final class dev/kord/rest/json/request/StartThreadRequest {
 	public final fun getType ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/StartThreadRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/StartThreadRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5447,7 +5323,6 @@ public final class dev/kord/rest/json/request/StartThreadRequest$Companion {
 
 public final class dev/kord/rest/json/request/UserAddDMRequest {
 	public static final field Companion Ldev/kord/rest/json/request/UserAddDMRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
@@ -5458,7 +5333,6 @@ public final class dev/kord/rest/json/request/UserAddDMRequest {
 	public final fun getToken ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/UserAddDMRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/UserAddDMRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5478,7 +5352,6 @@ public final class dev/kord/rest/json/request/UserAddDMRequest$Companion {
 
 public final class dev/kord/rest/json/request/VoiceStateModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/VoiceStateModifyRequest$Companion;
-	public synthetic fun <init> (ILdev/kord/common/entity/Snowflake;Ldev/kord/common/entity/optional/OptionalBoolean;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/optional/OptionalBoolean;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/optional/OptionalBoolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/Snowflake;
@@ -5490,7 +5363,6 @@ public final class dev/kord/rest/json/request/VoiceStateModifyRequest {
 	public final fun getSuppress ()Ldev/kord/common/entity/optional/OptionalBoolean;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/VoiceStateModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/VoiceStateModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5510,7 +5382,6 @@ public final class dev/kord/rest/json/request/VoiceStateModifyRequest$Companion 
 
 public final class dev/kord/rest/json/request/WebhookCreateRequest {
 	public static final field Companion Ldev/kord/rest/json/request/WebhookCreateRequest$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
@@ -5522,7 +5393,6 @@ public final class dev/kord/rest/json/request/WebhookCreateRequest {
 	public final fun getName ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/WebhookCreateRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/WebhookCreateRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5543,7 +5413,6 @@ public final class dev/kord/rest/json/request/WebhookCreateRequest$Companion {
 public final class dev/kord/rest/json/request/WebhookEditMessageRequest {
 	public static final field Companion Ldev/kord/rest/json/request/WebhookEditMessageRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -5563,7 +5432,6 @@ public final class dev/kord/rest/json/request/WebhookEditMessageRequest {
 	public final fun getFlags ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/WebhookEditMessageRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/WebhookEditMessageRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5584,7 +5452,6 @@ public final class dev/kord/rest/json/request/WebhookEditMessageRequest$Companio
 public final class dev/kord/rest/json/request/WebhookExecuteRequest {
 	public static final field Companion Ldev/kord/rest/json/request/WebhookExecuteRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalBoolean;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -5610,7 +5477,6 @@ public final class dev/kord/rest/json/request/WebhookExecuteRequest {
 	public final fun getUsername ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/WebhookExecuteRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/WebhookExecuteRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5631,7 +5497,6 @@ public final class dev/kord/rest/json/request/WebhookExecuteRequest$Companion {
 public final class dev/kord/rest/json/request/WebhookModifyRequest {
 	public static final field Companion Ldev/kord/rest/json/request/WebhookModifyRequest$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;)V
 	public synthetic fun <init> (Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalSnowflake;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/optional/Optional;
@@ -5645,7 +5510,6 @@ public final class dev/kord/rest/json/request/WebhookModifyRequest {
 	public final fun getName ()Ldev/kord/common/entity/optional/Optional;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/request/WebhookModifyRequest;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/request/WebhookModifyRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5665,7 +5529,6 @@ public final class dev/kord/rest/json/request/WebhookModifyRequest$Companion {
 
 public final class dev/kord/rest/json/response/BanResponse {
 	public static final field Companion Ldev/kord/rest/json/response/BanResponse$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ldev/kord/common/entity/DiscordUser;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ldev/kord/common/entity/DiscordUser;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ldev/kord/common/entity/DiscordUser;
@@ -5676,7 +5539,6 @@ public final class dev/kord/rest/json/response/BanResponse {
 	public final fun getUser ()Ldev/kord/common/entity/DiscordUser;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/response/BanResponse;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/response/BanResponse$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5696,7 +5558,6 @@ public final class dev/kord/rest/json/response/BanResponse$Companion {
 
 public final class dev/kord/rest/json/response/BotGatewayResponse {
 	public static final field Companion Ldev/kord/rest/json/response/BotGatewayResponse$Companion;
-	public synthetic fun <init> (ILjava/lang/String;ILdev/kord/rest/json/response/SessionStartLimitResponse;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;ILdev/kord/rest/json/response/SessionStartLimitResponse;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()I
@@ -5709,7 +5570,6 @@ public final class dev/kord/rest/json/response/BotGatewayResponse {
 	public final fun getUrl ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/response/BotGatewayResponse;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/response/BotGatewayResponse$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5729,7 +5589,6 @@ public final class dev/kord/rest/json/response/BotGatewayResponse$Companion {
 
 public final class dev/kord/rest/json/response/Connection {
 	public static final field Companion Ldev/kord/rest/json/response/Connection$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/util/List;ZZZILkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/util/List;ZZZI)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
@@ -5754,7 +5613,6 @@ public final class dev/kord/rest/json/response/Connection {
 	public final fun getVisibility ()I
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/response/Connection;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/response/Connection$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5774,7 +5632,6 @@ public final class dev/kord/rest/json/response/Connection$Companion {
 
 public final class dev/kord/rest/json/response/CurrentUserNicknameModifyResponse {
 	public static final field Companion Ldev/kord/rest/json/response/CurrentUserNicknameModifyResponse$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun copy (Ljava/lang/String;)Ldev/kord/rest/json/response/CurrentUserNicknameModifyResponse;
@@ -5783,7 +5640,6 @@ public final class dev/kord/rest/json/response/CurrentUserNicknameModifyResponse
 	public final fun getNick ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/response/CurrentUserNicknameModifyResponse;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/response/CurrentUserNicknameModifyResponse$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5804,7 +5660,6 @@ public final class dev/kord/rest/json/response/CurrentUserNicknameModifyResponse
 public final class dev/kord/rest/json/response/DiscordErrorResponse {
 	public static final field Companion Ldev/kord/rest/json/response/DiscordErrorResponse$Companion;
 	public fun <init> ()V
-	public synthetic fun <init> (ILdev/kord/rest/json/JsonErrorCode;Lkotlinx/serialization/json/JsonElement;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/rest/json/JsonErrorCode;Lkotlinx/serialization/json/JsonElement;Ljava/lang/String;)V
 	public synthetic fun <init> (Ldev/kord/rest/json/JsonErrorCode;Lkotlinx/serialization/json/JsonElement;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/rest/json/JsonErrorCode;
@@ -5818,7 +5673,6 @@ public final class dev/kord/rest/json/response/DiscordErrorResponse {
 	public final fun getMessage ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/response/DiscordErrorResponse;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/response/DiscordErrorResponse$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5838,7 +5692,6 @@ public final class dev/kord/rest/json/response/DiscordErrorResponse$Companion {
 
 public final class dev/kord/rest/json/response/FollowedChannelResponse {
 	public static final field Companion Ldev/kord/rest/json/response/FollowedChannelResponse$Companion;
-	public synthetic fun <init> (ILdev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;)V
 	public final fun component1 ()Ldev/kord/common/entity/Snowflake;
 	public final fun component2 ()Ldev/kord/common/entity/Snowflake;
@@ -5849,7 +5702,6 @@ public final class dev/kord/rest/json/response/FollowedChannelResponse {
 	public final fun getWebhookId ()Ldev/kord/common/entity/Snowflake;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/response/FollowedChannelResponse;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/response/FollowedChannelResponse$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5869,7 +5721,6 @@ public final class dev/kord/rest/json/response/FollowedChannelResponse$Companion
 
 public final class dev/kord/rest/json/response/GatewayResponse {
 	public static final field Companion Ldev/kord/rest/json/response/GatewayResponse$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun copy (Ljava/lang/String;)Ldev/kord/rest/json/response/GatewayResponse;
@@ -5878,7 +5729,6 @@ public final class dev/kord/rest/json/response/GatewayResponse {
 	public final fun getUrl ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/response/GatewayResponse;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/response/GatewayResponse$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5899,7 +5749,6 @@ public final class dev/kord/rest/json/response/GatewayResponse$Companion {
 public final class dev/kord/rest/json/response/GetPruneResponse {
 	public static final field Companion Ldev/kord/rest/json/response/GetPruneResponse$Companion;
 	public fun <init> (I)V
-	public synthetic fun <init> (IILkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public final fun component1 ()I
 	public final fun copy (I)Ldev/kord/rest/json/response/GetPruneResponse;
 	public static synthetic fun copy$default (Ldev/kord/rest/json/response/GetPruneResponse;IILjava/lang/Object;)Ldev/kord/rest/json/response/GetPruneResponse;
@@ -5907,7 +5756,6 @@ public final class dev/kord/rest/json/response/GetPruneResponse {
 	public final fun getPruned ()I
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/response/GetPruneResponse;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/response/GetPruneResponse$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5927,7 +5775,6 @@ public final class dev/kord/rest/json/response/GetPruneResponse$Companion {
 
 public final class dev/kord/rest/json/response/GuildMFALevelModifyResponse {
 	public static final field Companion Ldev/kord/rest/json/response/GuildMFALevelModifyResponse$Companion;
-	public synthetic fun <init> (ILdev/kord/common/entity/MFALevel;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ldev/kord/common/entity/MFALevel;)V
 	public final fun component1 ()Ldev/kord/common/entity/MFALevel;
 	public final fun copy (Ldev/kord/common/entity/MFALevel;)Ldev/kord/rest/json/response/GuildMFALevelModifyResponse;
@@ -5936,7 +5783,6 @@ public final class dev/kord/rest/json/response/GuildMFALevelModifyResponse {
 	public final fun getLevel ()Ldev/kord/common/entity/MFALevel;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/response/GuildMFALevelModifyResponse;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/response/GuildMFALevelModifyResponse$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5956,7 +5802,6 @@ public final class dev/kord/rest/json/response/GuildMFALevelModifyResponse$Compa
 
 public final class dev/kord/rest/json/response/ListThreadsResponse {
 	public static final field Companion Ldev/kord/rest/json/response/ListThreadsResponse$Companion;
-	public synthetic fun <init> (ILjava/util/List;Ljava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/util/List;Ljava/util/List;)V
 	public final fun component1 ()Ljava/util/List;
 	public final fun component2 ()Ljava/util/List;
@@ -5967,7 +5812,6 @@ public final class dev/kord/rest/json/response/ListThreadsResponse {
 	public final fun getThreads ()Ljava/util/List;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/response/ListThreadsResponse;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/response/ListThreadsResponse$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -5987,7 +5831,6 @@ public final class dev/kord/rest/json/response/ListThreadsResponse$Companion {
 
 public final class dev/kord/rest/json/response/NitroStickerPacksResponse {
 	public static final field Companion Ldev/kord/rest/json/response/NitroStickerPacksResponse$Companion;
-	public synthetic fun <init> (ILjava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/util/List;)V
 	public final fun component1 ()Ljava/util/List;
 	public final fun copy (Ljava/util/List;)Ldev/kord/rest/json/response/NitroStickerPacksResponse;
@@ -5996,7 +5839,6 @@ public final class dev/kord/rest/json/response/NitroStickerPacksResponse {
 	public final fun getStickerPacks ()Ljava/util/List;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/response/NitroStickerPacksResponse;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/response/NitroStickerPacksResponse$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -6016,7 +5858,6 @@ public final class dev/kord/rest/json/response/NitroStickerPacksResponse$Compani
 
 public final class dev/kord/rest/json/response/PartialChannelResponse {
 	public static final field Companion Ldev/kord/rest/json/response/PartialChannelResponse$Companion;
-	public synthetic fun <init> (ILjava/lang/String;Ldev/kord/common/entity/ChannelType;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/String;Ldev/kord/common/entity/ChannelType;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ldev/kord/common/entity/ChannelType;
@@ -6027,7 +5868,6 @@ public final class dev/kord/rest/json/response/PartialChannelResponse {
 	public final fun getType ()Ldev/kord/common/entity/ChannelType;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/response/PartialChannelResponse;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/response/PartialChannelResponse$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -6047,7 +5887,6 @@ public final class dev/kord/rest/json/response/PartialChannelResponse$Companion 
 
 public final class dev/kord/rest/json/response/PruneResponse {
 	public static final field Companion Ldev/kord/rest/json/response/PruneResponse$Companion;
-	public synthetic fun <init> (ILjava/lang/Integer;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 	public fun <init> (Ljava/lang/Integer;)V
 	public final fun component1 ()Ljava/lang/Integer;
 	public final fun copy (Ljava/lang/Integer;)Ldev/kord/rest/json/response/PruneResponse;
@@ -6056,7 +5895,6 @@ public final class dev/kord/rest/json/response/PruneResponse {
 	public final fun getPruned ()Ljava/lang/Integer;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/response/PruneResponse;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/response/PruneResponse$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
@@ -6076,7 +5914,6 @@ public final class dev/kord/rest/json/response/PruneResponse$Companion {
 
 public final class dev/kord/rest/json/response/SessionStartLimitResponse {
 	public static final field Companion Ldev/kord/rest/json/response/SessionStartLimitResponse$Companion;
-	public synthetic fun <init> (IIILkotlin/time/Duration;ILkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public synthetic fun <init> (IIJILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()I
 	public final fun component2 ()I
@@ -6091,7 +5928,6 @@ public final class dev/kord/rest/json/response/SessionStartLimitResponse {
 	public final fun getTotal ()I
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-	public static final synthetic fun write$Self (Ldev/kord/rest/json/response/SessionStartLimitResponse;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 }
 
 public final class dev/kord/rest/json/response/SessionStartLimitResponse$$serializer : kotlinx/serialization/internal/GeneratedSerializer {

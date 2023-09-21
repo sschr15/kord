@@ -26,7 +26,7 @@ kotlin {
     explicitApi()
 
     jvm()
-    js(IR) {
+    js {
         nodejs()
     }
     jvmToolchain(Jvm.target)
@@ -36,6 +36,8 @@ kotlin {
             compilerOptions.options.applyKordCompilerOptions()
         }
     }
+
+    applyDefaultHierarchyTemplate()
 
     sourceSets {
         all {
@@ -53,14 +55,10 @@ kotlin {
         val nonJvmMain by creating {
             dependsOn(commonMain.get())
         }
-        targets
-            .map { it.name }
-            .filter { it != "jvm" && it != "metadata" }
-            .forEach { target ->
-                sourceSets.getByName("${target}Main") {
-                    dependsOn(nonJvmMain)
-                }
-            }
+        // TODO also add for nativeMain when native is supported
+        jsMain {
+            dependsOn(nonJvmMain)
+        }
     }
 }
 
