@@ -171,7 +171,6 @@ public abstract class BaseKordBuilder internal constructor(public val token: Str
      * ```
      */
     public fun cache(builder: KordCacheBuilder.(resources: ClientResources) -> Unit) {
-        contract { callsInPlace(builder, InvocationKind.EXACTLY_ONCE) }
         val old = cacheBuilder
         cacheBuilder = { resources: ClientResources ->
             old(resources)

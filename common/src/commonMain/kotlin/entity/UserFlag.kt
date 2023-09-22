@@ -69,7 +69,7 @@ public sealed class UserFlag(
     /**
      * @suppress
      */
-    @Suppress(names = arrayOf("DeprecatedCallableAddReplaceWith", "DEPRECATION_ERROR"))
+    @Suppress("DeprecatedCallableAddReplaceWith", "DEPRECATION_ERROR")
     @Deprecated(message = "UserFlag is no longer an enum class. Deprecated without a replacement.", level = DeprecationLevel.ERROR)
     public fun ordinal(): Int = when (this) {
         DiscordEmployee -> 0
@@ -282,7 +282,7 @@ public sealed class UserFlag(
         @JvmField
         public val TeamUser: UserFlag = TeamUser
 
-        @Suppress(names = arrayOf("DEPRECATION_ERROR"))
+        @Suppress("DEPRECATION_ERROR")
         @Deprecated(
             level = DeprecationLevel.HIDDEN,
             message = "Binary compatibility",
@@ -360,7 +360,7 @@ public sealed class UserFlag(
         /**
          * @suppress
          */
-        @Suppress(names = arrayOf("NON_FINAL_MEMBER_IN_OBJECT", "DeprecatedCallableAddReplaceWith"))
+        @Suppress("NON_FINAL_MEMBER_IN_OBJECT", "DeprecatedCallableAddReplaceWith")
         @Deprecated(message =
                 "UserFlag is no longer an enum class. Deprecated without a replacement.", level = DeprecationLevel.ERROR)
         @JvmStatic
@@ -387,7 +387,7 @@ public sealed class UserFlag(
         /**
          * @suppress
          */
-        @Suppress(names = arrayOf("NON_FINAL_MEMBER_IN_OBJECT"))
+        @Suppress("NON_FINAL_MEMBER_IN_OBJECT")
         @Deprecated(
             message = "UserFlag is no longer an enum class.",
             replaceWith = ReplaceWith(expression = "UserFlag.entries.toTypedArray()", imports =
@@ -400,7 +400,7 @@ public sealed class UserFlag(
         /**
          * @suppress
          */
-        @Suppress(names = arrayOf("NON_FINAL_MEMBER_IN_OBJECT", "UPPER_BOUND_VIOLATED"))
+        @Suppress("NON_FINAL_MEMBER_IN_OBJECT", "UPPER_BOUND_VIOLATED")
         @Deprecated(
             level = DeprecationLevel.HIDDEN,
             message = "UserFlag is no longer an enum class.",
@@ -410,8 +410,8 @@ public sealed class UserFlag(
         @JvmStatic
         public open fun getEntries(): EnumEntries<UserFlag> = EnumEntriesList
 
-        @Suppress(names = arrayOf("SEALED_INHERITOR_IN_DIFFERENT_MODULE",
-                        "SEALED_INHERITOR_IN_DIFFERENT_PACKAGE", "UPPER_BOUND_VIOLATED"))
+        @Suppress("SEALED_INHERITOR_IN_DIFFERENT_MODULE",
+                        "SEALED_INHERITOR_IN_DIFFERENT_PACKAGE", "UPPER_BOUND_VIOLATED")
         private object EnumEntriesList : EnumEntries<UserFlag>, List<UserFlag> by entries {
             override fun equals(other: Any?): Boolean = entries == other
 

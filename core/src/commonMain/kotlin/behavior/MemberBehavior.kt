@@ -212,9 +212,9 @@ public fun MemberBehavior(
  * @throws [RestRequestException] if something went wrong during the request.
  */
 public suspend inline fun MemberBehavior.ban(builder: BanCreateBuilder.() -> Unit = {}) {
-    contract {
-        callsInPlace(builder, InvocationKind.EXACTLY_ONCE)
-    }
+//    contract {
+//        callsInPlace(builder, InvocationKind.EXACTLY_ONCE)
+//    }
     guild.ban(id, builder)
 }
 

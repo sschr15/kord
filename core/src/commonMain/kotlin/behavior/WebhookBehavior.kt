@@ -161,9 +161,9 @@ public suspend inline fun WebhookBehavior.execute(
     threadId: Snowflake? = null,
     builder: WebhookMessageCreateBuilder.() -> Unit,
 ): Message {
-    contract {
-        callsInPlace(builder, InvocationKind.EXACTLY_ONCE)
-    }
+//    contract {
+//        callsInPlace(builder, InvocationKind.EXACTLY_ONCE)
+//    }
     val response = kord.rest.webhook.executeWebhook(id, token, wait = true, threadId, builder)!!
     val data = MessageData.from(response)
     return Message(data, kord)
@@ -184,8 +184,8 @@ public suspend inline fun WebhookBehavior.executeIgnored(
     threadId: Snowflake? = null,
     builder: WebhookMessageCreateBuilder.() -> Unit,
 ) {
-    contract {
-        callsInPlace(builder, InvocationKind.EXACTLY_ONCE)
-    }
+//    contract {
+//        callsInPlace(builder, InvocationKind.EXACTLY_ONCE)
+//    }
     kord.rest.webhook.executeWebhook(id, token, wait = false, threadId, builder)
 }

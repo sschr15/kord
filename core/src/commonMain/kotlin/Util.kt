@@ -30,9 +30,9 @@ import kotlin.contracts.contract
 import kotlin.reflect.KClass
 
 internal inline fun <T> catchNotFound(block: () -> T): T? {
-    contract {
-        callsInPlace(block, InvocationKind.EXACTLY_ONCE)
-    }
+//    contract {
+//        callsInPlace(block, InvocationKind.EXACTLY_ONCE)
+//    }
     return try {
         block()
     } catch (exception: RestRequestException) {
@@ -42,9 +42,9 @@ internal inline fun <T> catchNotFound(block: () -> T): T? {
 }
 
 internal inline fun <T> catchDiscordError(vararg codes: JsonErrorCode, block: () -> T): T? {
-    contract {
-        callsInPlace(block, InvocationKind.EXACTLY_ONCE)
-    }
+//    contract {
+//        callsInPlace(block, InvocationKind.EXACTLY_ONCE)
+//    }
     return try {
         block()
     } catch (exception: RestRequestException) {

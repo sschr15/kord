@@ -154,7 +154,7 @@ public class GuildEmoji(
         contract {
             callsInPlace(builder, InvocationKind.EXACTLY_ONCE)
         }
-        kord.rest.emoji.modifyEmoji(guildId = guildId, emojiId = id, builder = builder)
+        kord.rest.emoji.modifyEmoji(guildId = guildId, emojiId = id, builder)
     }
 
     /**

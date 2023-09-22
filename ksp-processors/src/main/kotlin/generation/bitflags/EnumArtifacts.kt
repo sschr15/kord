@@ -81,7 +81,9 @@ internal fun TypeSpec.Builder.addDeprecatedEntityCompanionObjectEnumArtifacts() 
     }
     addFunction("valueOf") {
         addKdoc("@suppress")
-        addAnnotation(Suppress("NON_FINAL_MEMBER_IN_OBJECT", "DeprecatedCallableAddReplaceWith"))
+        addAnnotation<Suppress> {
+            addMember("%S, %S", "NON_FINAL_MEMBER_IN_OBJECT", "DeprecatedCallableAddReplaceWith")
+        }
         addAnnotation(
             Deprecated("$entityName is no longer an enum class. Deprecated without a replacement.", level = LEVEL)
         )
@@ -98,7 +100,7 @@ internal fun TypeSpec.Builder.addDeprecatedEntityCompanionObjectEnumArtifacts() 
     }
     addFunction("values") {
         addKdoc("@suppress")
-        addAnnotation(Suppress("NON_FINAL_MEMBER_IN_OBJECT"))
+        addAnnotation<Suppress> { addMember("%S", "NON_FINAL_MEMBER_IN_OBJECT") }
         addAnnotation(
             Deprecated(
                 "$entityName is no longer an enum class.",
@@ -113,13 +115,14 @@ internal fun TypeSpec.Builder.addDeprecatedEntityCompanionObjectEnumArtifacts() 
     }
     val enumEntries = EnumEntries::class.asClassName().parameterizedBy(entityCN)
     addObject("EnumEntriesList") {
-        addAnnotation(
-            Suppress(
+        addAnnotation<Suppress> {
+            addMember(
+                "%S,\n                %S, %S",
                 "SEALED_INHERITOR_IN_DIFFERENT_MODULE",
                 "SEALED_INHERITOR_IN_DIFFERENT_PACKAGE",
                 "UPPER_BOUND_VIOLATED",
             )
-        )
+        }
         addModifiers(PRIVATE)
         addSuperinterface(enumEntries)
         addSuperinterface(LIST.parameterizedBy(entityCN), delegate = CodeBlock.of("entries"))
@@ -142,7 +145,7 @@ internal fun TypeSpec.Builder.addDeprecatedEntityCompanionObjectEnumArtifacts() 
     }
     addFunction("getEntries") {
         addKdoc("@suppress")
-        addAnnotation(Suppress("NON_FINAL_MEMBER_IN_OBJECT", "UPPER_BOUND_VIOLATED"))
+        addAnnotation<Suppress> { addMember("%S, %S", "NON_FINAL_MEMBER_IN_OBJECT", "UPPER_BOUND_VIOLATED") }
         addAnnotation(
             Deprecated(
                 "$entityName is no longer an enum class.",

@@ -254,7 +254,7 @@ public suspend inline fun MessageBehavior.edit(builder: UserMessageModifyBuilder
     }
 
     val response =
-        kord.rest.channel.editMessage(channelId = channelId, messageId = id, builder = builder)
+        kord.rest.channel.editMessage(channelId = channelId, messageId = id, builder)
     val data = MessageData.from(response)
 
     return Message(data, kord)
@@ -276,9 +276,9 @@ public suspend inline fun MessageBehavior.edit(
     threadId: Snowflake? = null,
     builder: WebhookMessageModifyBuilder.() -> Unit
 ): Message {
-    contract {
-        callsInPlace(builder, InvocationKind.EXACTLY_ONCE)
-    }
+//    contract {
+//        callsInPlace(builder, InvocationKind.EXACTLY_ONCE)
+//    }
     val response = kord.rest.webhook.editWebhookMessage(webhookId, token, messageId = id, threadId, builder)
     val data = MessageData.from(response)
     return Message(data, kord)

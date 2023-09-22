@@ -721,7 +721,7 @@ public suspend inline fun GuildBehavior.createUserCommand(
 public suspend inline fun GuildBehavior.createApplicationCommands(
     builder: GuildMultiApplicationCommandBuilder.() -> Unit
 ): Flow<GuildApplicationCommand> {
-    contract { callsInPlace(builder, EXACTLY_ONCE) }
+//    contract { callsInPlace(builder, EXACTLY_ONCE) }
     return kord.createGuildApplicationCommands(id, builder)
 }
 
@@ -899,9 +899,9 @@ public suspend inline fun GuildBehavior.swapChannelPositions(builder: GuildChann
  * @throws [RestRequestException] if something went wrong during the request.
  */
 public suspend inline fun GuildBehavior.swapRolePositions(builder: RolePositionsModifyBuilder.() -> Unit): Flow<Role> {
-    contract {
-        callsInPlace(builder, EXACTLY_ONCE)
-    }
+//    contract {
+//        callsInPlace(builder, EXACTLY_ONCE)
+//    }
     val response = kord.rest.guild.modifyGuildRolePosition(id, builder)
     return response.asFlow().map { RoleData.from(id, it) }.map { Role(it, kord) }
 
@@ -933,7 +933,7 @@ public suspend inline fun GuildBehavior.ban(userId: Snowflake, builder: BanCreat
     contract {
         callsInPlace(builder, EXACTLY_ONCE)
     }
-    kord.rest.guild.addGuildBan(guildId = id, userId = userId, builder = builder)
+    kord.rest.guild.addGuildBan(guildId = id, userId = userId, builder)
 }
 
 /**
@@ -1000,7 +1000,7 @@ public suspend inline fun GuildBehavior.editOnboarding(
  *  ```
  */
 public inline fun GuildBehavior.getAuditLogEntries(builder: AuditLogGetRequestBuilder.() -> Unit = {}): Flow<AuditLogEntry> {
-    contract { callsInPlace(builder, EXACTLY_ONCE) }
+//    contract { callsInPlace(builder, EXACTLY_ONCE) }
     return kord.with(rest).getAuditLogEntries(id, builder).map { AuditLogEntry(it, kord) }
 }
 

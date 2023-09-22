@@ -293,7 +293,7 @@ public sealed class MessageFlag(
         /**
          * @suppress
          */
-        @Suppress(names = arrayOf("NON_FINAL_MEMBER_IN_OBJECT", "DeprecatedCallableAddReplaceWith"))
+        @Suppress("NON_FINAL_MEMBER_IN_OBJECT", "DeprecatedCallableAddReplaceWith")
         @Deprecated(
             level = DeprecationLevel.ERROR,
             message = "MessageFlag is no longer an enum class. Deprecated without a replacement.",
@@ -317,7 +317,7 @@ public sealed class MessageFlag(
         /**
          * @suppress
          */
-        @Suppress(names = arrayOf("NON_FINAL_MEMBER_IN_OBJECT"))
+        @Suppress("NON_FINAL_MEMBER_IN_OBJECT")
         @Deprecated(
             level = DeprecationLevel.ERROR,
             message = "MessageFlag is no longer an enum class.",
@@ -330,7 +330,7 @@ public sealed class MessageFlag(
         /**
          * @suppress
          */
-        @Suppress(names = arrayOf("NON_FINAL_MEMBER_IN_OBJECT", "UPPER_BOUND_VIOLATED"))
+        @Suppress("NON_FINAL_MEMBER_IN_OBJECT", "UPPER_BOUND_VIOLATED")
         @Deprecated(
             level = DeprecationLevel.HIDDEN,
             message = "MessageFlag is no longer an enum class.",
@@ -340,8 +340,8 @@ public sealed class MessageFlag(
         @JvmStatic
         public open fun getEntries(): EnumEntries<MessageFlag> = EnumEntriesList
 
-        @Suppress(names = arrayOf("SEALED_INHERITOR_IN_DIFFERENT_MODULE",
-                        "SEALED_INHERITOR_IN_DIFFERENT_PACKAGE", "UPPER_BOUND_VIOLATED"))
+        @Suppress("SEALED_INHERITOR_IN_DIFFERENT_MODULE",
+                        "SEALED_INHERITOR_IN_DIFFERENT_PACKAGE", "UPPER_BOUND_VIOLATED")
         private object EnumEntriesList : EnumEntries<MessageFlag>, List<MessageFlag> by entries {
             override fun equals(other: Any?): Boolean = entries == other
 

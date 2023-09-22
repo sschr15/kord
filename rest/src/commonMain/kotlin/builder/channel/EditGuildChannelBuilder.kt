@@ -196,7 +196,7 @@ public class MediaChannelModifyBuilder : PermissionOverwritesModifyBuilder,
     public var availableTags: MutableList<ForumTagRequest>? by ::_availableTags.delegate()
 
     public fun tag(name: String, builder: ForumTagBuilder.() -> Unit = {}) {
-        contract { callsInPlace(builder, InvocationKind.EXACTLY_ONCE) }
+//        contract { callsInPlace(builder, InvocationKind.EXACTLY_ONCE) }
         val tag = ForumTagBuilder(name).apply(builder).toRequest()
         availableTags?.add(tag) ?: run { availableTags = mutableListOf(tag) }
     }

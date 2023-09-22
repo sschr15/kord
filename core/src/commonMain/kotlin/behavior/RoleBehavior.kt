@@ -153,7 +153,7 @@ public suspend inline fun RoleBehavior.edit(builder: RoleModifyBuilder.() -> Uni
     contract {
         callsInPlace(builder, InvocationKind.EXACTLY_ONCE)
     }
-    val response = kord.rest.guild.modifyGuildRole(guildId = guildId, roleId = id, builder = builder)
+    val response = kord.rest.guild.modifyGuildRole(guildId = guildId, roleId = id, builder)
     val data = RoleData.from(id, response)
 
     return Role(data, kord)

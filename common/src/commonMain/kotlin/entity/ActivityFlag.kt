@@ -211,7 +211,7 @@ public sealed class ActivityFlag(
         /**
          * @suppress
          */
-        @Suppress(names = arrayOf("NON_FINAL_MEMBER_IN_OBJECT", "DeprecatedCallableAddReplaceWith"))
+        @Suppress("NON_FINAL_MEMBER_IN_OBJECT", "DeprecatedCallableAddReplaceWith")
         @Deprecated(message =
                 "ActivityFlag is no longer an enum class. Deprecated without a replacement.", level = DeprecationLevel.ERROR)
         @JvmStatic
@@ -231,7 +231,7 @@ public sealed class ActivityFlag(
         /**
          * @suppress
          */
-        @Suppress(names = arrayOf("NON_FINAL_MEMBER_IN_OBJECT"))
+        @Suppress("NON_FINAL_MEMBER_IN_OBJECT")
         @Deprecated(
             message = "ActivityFlag is no longer an enum class.",
             replaceWith = ReplaceWith(expression = "ActivityFlag.entries.toTypedArray()", imports =
@@ -244,7 +244,7 @@ public sealed class ActivityFlag(
         /**
          * @suppress
          */
-        @Suppress(names = arrayOf("NON_FINAL_MEMBER_IN_OBJECT", "UPPER_BOUND_VIOLATED"))
+        @Suppress("NON_FINAL_MEMBER_IN_OBJECT", "UPPER_BOUND_VIOLATED")
         @Deprecated(
             level = DeprecationLevel.HIDDEN,
             message = "ActivityFlag is no longer an enum class.",
@@ -254,8 +254,8 @@ public sealed class ActivityFlag(
         @JvmStatic
         public open fun getEntries(): EnumEntries<ActivityFlag> = EnumEntriesList
 
-        @Suppress(names = arrayOf("SEALED_INHERITOR_IN_DIFFERENT_MODULE",
-                        "SEALED_INHERITOR_IN_DIFFERENT_PACKAGE", "UPPER_BOUND_VIOLATED"))
+        @Suppress("SEALED_INHERITOR_IN_DIFFERENT_MODULE",
+                        "SEALED_INHERITOR_IN_DIFFERENT_PACKAGE", "UPPER_BOUND_VIOLATED")
         private object EnumEntriesList : EnumEntries<ActivityFlag>, List<ActivityFlag> by entries {
             override fun equals(other: Any?): Boolean = entries == other
 

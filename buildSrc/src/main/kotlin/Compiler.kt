@@ -5,6 +5,7 @@ import org.gradle.kotlin.dsl.assign
 import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.getByType
 import org.jetbrains.kotlin.gradle.dsl.KotlinCommonCompilerOptions
+import org.jetbrains.kotlin.gradle.dsl.KotlinVersion.KOTLIN_2_0
 import org.jetbrains.kotlin.gradle.plugin.KotlinSourceSet
 
 object OptIns {
@@ -28,6 +29,9 @@ fun KotlinCommonCompilerOptions.applyKordCompilerOptions() {
     allWarningsAsErrors = true
     progressiveMode = true
     freeCompilerArgs.add("-Xexpect-actual-classes")
+    // enable K2
+    languageVersion = KOTLIN_2_0
+    freeCompilerArgs.add( "-Xsuppress-version-warnings")
 }
 
 fun KotlinSourceSet.applyKordOptIns() {

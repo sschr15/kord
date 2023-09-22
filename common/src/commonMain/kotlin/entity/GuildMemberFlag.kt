@@ -201,7 +201,7 @@ public sealed class GuildMemberFlag(
         /**
          * @suppress
          */
-        @Suppress(names = arrayOf("NON_FINAL_MEMBER_IN_OBJECT", "DeprecatedCallableAddReplaceWith"))
+        @Suppress("NON_FINAL_MEMBER_IN_OBJECT", "DeprecatedCallableAddReplaceWith")
         @Deprecated(message =
                 "GuildMemberFlag is no longer an enum class. Deprecated without a replacement.", level = DeprecationLevel.ERROR)
         @JvmStatic
@@ -217,7 +217,7 @@ public sealed class GuildMemberFlag(
         /**
          * @suppress
          */
-        @Suppress(names = arrayOf("NON_FINAL_MEMBER_IN_OBJECT"))
+        @Suppress("NON_FINAL_MEMBER_IN_OBJECT")
         @Deprecated(
             message = "GuildMemberFlag is no longer an enum class.",
             replaceWith = ReplaceWith(expression = "GuildMemberFlag.entries.toTypedArray()", imports
@@ -230,7 +230,7 @@ public sealed class GuildMemberFlag(
         /**
          * @suppress
          */
-        @Suppress(names = arrayOf("NON_FINAL_MEMBER_IN_OBJECT", "UPPER_BOUND_VIOLATED"))
+        @Suppress("NON_FINAL_MEMBER_IN_OBJECT", "UPPER_BOUND_VIOLATED")
         @Deprecated(
             level = DeprecationLevel.HIDDEN,
             message = "GuildMemberFlag is no longer an enum class.",
@@ -240,8 +240,8 @@ public sealed class GuildMemberFlag(
         @JvmStatic
         public open fun getEntries(): EnumEntries<GuildMemberFlag> = EnumEntriesList
 
-        @Suppress(names = arrayOf("SEALED_INHERITOR_IN_DIFFERENT_MODULE",
-                        "SEALED_INHERITOR_IN_DIFFERENT_PACKAGE", "UPPER_BOUND_VIOLATED"))
+        @Suppress("SEALED_INHERITOR_IN_DIFFERENT_MODULE",
+                        "SEALED_INHERITOR_IN_DIFFERENT_PACKAGE", "UPPER_BOUND_VIOLATED")
         private object EnumEntriesList : EnumEntries<GuildMemberFlag>, List<GuildMemberFlag> by
                 entries {
             override fun equals(other: Any?): Boolean = entries == other
