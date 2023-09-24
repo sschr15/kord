@@ -4,6 +4,12 @@
 [![Download](https://img.shields.io/maven-central/v/dev.kord/kord-core.svg?label=Maven%20Central&style=for-the-badge)](https://search.maven.org/search?q=g:%22dev.kord%22%20AND%20a:%22kord-core%22)
 [![Github CI status (branch)](https://img.shields.io/github/actions/workflow/status/kordlib/kord/deployment-ci.yml?branch=main&label=CI&style=for-the-badge)]()
 
+## Notice: This is a fork with goals of adding support for Kotlin/Native. Support is limited
+To build this fork, you also need to build [my fork of kordlib/cache](https://github.com/sschr15/cache) with `gradlew publish`
+before building this project.
+
+---
+
 __Kord is still in an experimental stage, as such we can't guarantee API stability between releases. While we'd love for
 you to try out our library, we don't recommend you use this in production just yet.__
 
