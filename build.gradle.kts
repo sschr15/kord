@@ -2,8 +2,11 @@ plugins {
     org.jetbrains.dokka // for dokkaHtmlMultiModule task
 }
 
-repositories {
-    mavenCentral()
+allprojects {
+    repositories {
+        mavenLocal() // custom build of kord-cache
+        mavenCentral()
+    }
 }
 
 group = Library.group

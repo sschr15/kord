@@ -17,5 +17,18 @@ kotlin {
                 implementation(libs.ktor.client.mock)
             }
         }
+        mingwX64Main {
+            dependencies {
+                implementation(projects.kspAnnotations)
+            }
+        }
+        linuxX64Main {
+            dependencies {
+                implementation(projects.kspAnnotations)
+            }
+        }
     }
 }
+
+tasks.getByName("compileKotlinLinuxX64").dependsOn(":rest:kspCommonMainKotlinMetadata")
+tasks.getByName("compileKotlinMingwX64").dependsOn(":rest:kspCommonMainKotlinMetadata")

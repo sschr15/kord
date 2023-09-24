@@ -30,8 +30,21 @@ kotlin {
                 implementation(libs.mockk)
             }
         }
+        mingwX64Main {
+            dependencies {
+                implementation(projects.kspAnnotations)
+            }
+        }
+        linuxX64Main {
+            dependencies {
+                implementation(projects.kspAnnotations)
+            }
+        }
     }
 }
+
+tasks.getByName("compileKotlinLinuxX64").dependsOn(":core:kspCommonMainKotlinMetadata")
+tasks.getByName("compileKotlinMingwX64").dependsOn(":core:kspCommonMainKotlinMetadata")
 
 tasks {
     dokkaHtmlMultiModule {

@@ -25,5 +25,18 @@ kotlin {
                 implementation(projects.kspAnnotations)
             }
         }
+        mingwX64Main {
+            dependencies {
+                implementation(projects.kspAnnotations)
+            }
+        }
+        linuxX64Main {
+            dependencies {
+                implementation(projects.kspAnnotations)
+            }
+        }
     }
 }
+
+tasks.getByName("compileKotlinLinuxX64").dependsOn(":gateway:kspCommonMainKotlinMetadata")
+tasks.getByName("compileKotlinMingwX64").dependsOn(":gateway:kspCommonMainKotlinMetadata")

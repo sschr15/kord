@@ -21,7 +21,7 @@ val kordOptIns = listOf(
 )
 
 object Jvm {
-    const val target = 8
+    const val target = 11
 }
 
 fun KotlinCommonCompilerOptions.applyKordCompilerOptions() {

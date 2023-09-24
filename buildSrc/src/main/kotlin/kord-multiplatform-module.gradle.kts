@@ -30,6 +30,8 @@ kotlin {
         nodejs()
     }
     jvmToolchain(Jvm.target)
+    linuxX64()
+    mingwX64()
 
     targets.all {
         compilations.all {
@@ -59,6 +61,17 @@ kotlin {
             .forEach { target ->
                 sourceSets.getByName("${target}Main") {
                     dependsOn(nonJvmMain)
+                }
+            }
+        val nativeMain by creating {
+            dependsOn(commonMain.get())
+        }
+        targets
+            .map { it.name }
+            .filter { it != "jvm" && it != "metadata" && it != "js" }
+            .forEach { target ->
+                sourceSets.getByName("${target}Main") {
+                    dependsOn(nativeMain)
                 }
             }
     }

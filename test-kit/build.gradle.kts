@@ -6,6 +6,7 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
+                implementation(projects.common)
                 api(libs.bundles.test.common)
                 api(libs.ktor.utils)
             }
@@ -18,6 +19,16 @@ kotlin {
         jvmMain {
             dependencies {
                 api(libs.bundles.test.jvm)
+            }
+        }
+        mingwX64Main {
+            dependencies {
+                implementation(projects.kspAnnotations)
+            }
+        }
+        linuxX64Main {
+            dependencies {
+                implementation(projects.kspAnnotations)
             }
         }
     }

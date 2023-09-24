@@ -39,8 +39,23 @@ kotlin {
                 implementation(projects.kspAnnotations)
             }
         }
+        mingwX64Main {
+            dependencies {
+                implementation(projects.kspAnnotations)
+                implementation(libs.ktor.client.winhttp)
+            }
+        }
+        linuxX64Main {
+            dependencies {
+                implementation(projects.kspAnnotations)
+                implementation(libs.ktor.client.curl)
+            }
+        }
     }
 }
+
+tasks.getByName("compileKotlinLinuxX64").dependsOn(":common:kspCommonMainKotlinMetadata")
+tasks.getByName("compileKotlinMingwX64").dependsOn(":common:kspCommonMainKotlinMetadata")
 
 /*
 This will generate a file named "BuildConfigGenerated.kt" that looks like:
